@@ -1,0 +1,759 @@
+        -:    0:Source:/cygdrive/c/Users/Juan/Desktop/TPI-toroide/tests/EJ05_cantidadVecinosVivosTEST.cpp
+        -:    0:Graph:/cygdrive/c/Users/Juan/Desktop/TPI-toroide/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ05_cantidadVecinosVivosTEST.gcno
+        -:    0:Data:/cygdrive/c/Users/Juan/Desktop/TPI-toroide/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ05_cantidadVecinosVivosTEST.gcda
+        -:    0:Runs:1
+        -:    1:#include "../ejercicios.h"
+        -:    2:#include "../auxiliares.h"
+        -:    3:#include "gtest/gtest.h"
+        -:    4:#include <algorithm>
+        -:    5:
+        -:    6:using namespace std;
+        -:    7:
+        2:    8:TEST(cantidadVecinosVivosTEST, seisVivos){
+        -:    9:    toroide t = {
+        -:   10:            {true, false, false, false},
+        -:   11:            {false, false, true, true},
+        -:   12:            {false, false, false, false},
+        8:   13:            {true, false, true, true}};
+        -:   14:
+       1*:   15:    EXPECT_EQ(cantidadVecinosVivos(t, 0, 3), 6);
+        1:   16:}
+------------------
+_ZN39cantidadVecinosVivosTEST_seisVivos_Test8TestBodyEv:
+        1:    8:TEST(cantidadVecinosVivosTEST, seisVivos){
+        -:    9:    toroide t = {
+        -:   10:            {true, false, false, false},
+        -:   11:            {false, false, true, true},
+        -:   12:            {false, false, false, false},
+        8:   13:            {true, false, true, true}};
+        1:   13-block  0
+        1:   13-block  1
+        1:   13-block  2
+        1:   13-block  3
+        1:   13-block  4
+        4:   13-block  5
+        1:   13-block  6
+    $$$$$:   13-block  7
+    $$$$$:   13-block  8
+    $$$$$:   13-block  9
+    $$$$$:   13-block 10
+    $$$$$:   13-block 11
+    $$$$$:   13-block 12
+    $$$$$:   13-block 13
+    $$$$$:   13-block 14
+    $$$$$:   13-block 15
+    $$$$$:   13-block 16
+    $$$$$:   13-block 17
+    $$$$$:   13-block 18
+        -:   14:
+       1*:   15:    EXPECT_EQ(cantidadVecinosVivos(t, 0, 3), 6);
+        1:   15-block  0
+        1:   15-block  1
+    %%%%%:   15-block  2
+    %%%%%:   15-block  3
+    %%%%%:   15-block  4
+    %%%%%:   15-block  5
+    %%%%%:   15-block  6
+        1:   15-block  7
+    $$$$$:   15-block  8
+    $$$$$:   15-block  9
+    $$$$$:   15-block 10
+    $$$$$:   15-block 11
+    $$$$$:   15-block 12
+    $$$$$:   15-block 13
+    $$$$$:   15-block 14
+        1:   16:}
+------------------
+_ZN39cantidadVecinosVivosTEST_seisVivos_TestC1Ev:
+        1:    8:TEST(cantidadVecinosVivosTEST, seisVivos){
+        1:    8-block  0
+------------------
+        -:   17:
+        -:   18:/*############Nuestros TEST######################*/
+        -:   19:
+        2:   20:TEST(cantidadVecinosVivosTEST,todosVivosDespuesDeUnTick){
+        -:   21:    toroide t = { {true, false, false},
+        -:   22:                  {false, true, false},
+        7:   23:                  {false, false, true} };
+        -:   24:                        //1*0 0 1*0
+        -:   25:                        //0 1 0 0 1
+        -:   26:                        //0 0 1 0 0
+        -:   27:                        //1 0 0 1 0
+        -:   28:                        //0*1 0 0*1
+       1*:   29:    EXPECT_EQ(cantidadVecinosVivos(t, 0, 0), 2);
+       1*:   30:    EXPECT_EQ(cantidadVecinosVivos(t, 0, 1), 3);
+       1*:   31:    EXPECT_EQ(cantidadVecinosVivos(t, 0, 2), 3);
+       1*:   32:    EXPECT_EQ(cantidadVecinosVivos(t, 1, 0), 3);
+       1*:   33:    EXPECT_EQ(cantidadVecinosVivos(t, 1, 1), 2);
+       1*:   34:    EXPECT_EQ(cantidadVecinosVivos(t, 1, 2), 3);
+       1*:   35:    EXPECT_EQ(cantidadVecinosVivos(t, 2, 0), 3);
+       1*:   36:    EXPECT_EQ(cantidadVecinosVivos(t, 2, 1), 3);
+       1*:   37:    EXPECT_EQ(cantidadVecinosVivos(t, 2, 2), 2);
+        1:   38:}
+------------------
+_ZN55cantidadVecinosVivosTEST_todosVivosDespuesDeUnTick_Test8TestBodyEv:
+        1:   20:TEST(cantidadVecinosVivosTEST,todosVivosDespuesDeUnTick){
+        -:   21:    toroide t = { {true, false, false},
+        -:   22:                  {false, true, false},
+        7:   23:                  {false, false, true} };
+        1:   23-block  0
+        1:   23-block  1
+        1:   23-block  2
+        1:   23-block  3
+        3:   23-block  4
+        1:   23-block  5
+    $$$$$:   23-block  6
+    $$$$$:   23-block  7
+    $$$$$:   23-block  8
+    $$$$$:   23-block  9
+    $$$$$:   23-block 10
+    $$$$$:   23-block 11
+    $$$$$:   23-block 12
+    $$$$$:   23-block 13
+    $$$$$:   23-block 14
+    $$$$$:   23-block 15
+        -:   24:                        //1*0 0 1*0
+        -:   25:                        //0 1 0 0 1
+        -:   26:                        //0 0 1 0 0
+        -:   27:                        //1 0 0 1 0
+        -:   28:                        //0*1 0 0*1
+       1*:   29:    EXPECT_EQ(cantidadVecinosVivos(t, 0, 0), 2);
+        1:   29-block  0
+        1:   29-block  1
+    %%%%%:   29-block  2
+    %%%%%:   29-block  3
+    %%%%%:   29-block  4
+    %%%%%:   29-block  5
+    %%%%%:   29-block  6
+        1:   29-block  7
+    $$$$$:   29-block  8
+    $$$$$:   29-block  9
+    $$$$$:   29-block 10
+    $$$$$:   29-block 11
+    $$$$$:   29-block 12
+    $$$$$:   29-block 13
+    $$$$$:   29-block 14
+       1*:   30:    EXPECT_EQ(cantidadVecinosVivos(t, 0, 1), 3);
+        1:   30-block  0
+        1:   30-block  1
+    %%%%%:   30-block  2
+    %%%%%:   30-block  3
+    %%%%%:   30-block  4
+    %%%%%:   30-block  5
+    %%%%%:   30-block  6
+        1:   30-block  7
+    $$$$$:   30-block  8
+    $$$$$:   30-block  9
+    $$$$$:   30-block 10
+    $$$$$:   30-block 11
+    $$$$$:   30-block 12
+    $$$$$:   30-block 13
+    $$$$$:   30-block 14
+       1*:   31:    EXPECT_EQ(cantidadVecinosVivos(t, 0, 2), 3);
+        1:   31-block  0
+        1:   31-block  1
+    %%%%%:   31-block  2
+    %%%%%:   31-block  3
+    %%%%%:   31-block  4
+    %%%%%:   31-block  5
+    %%%%%:   31-block  6
+        1:   31-block  7
+    $$$$$:   31-block  8
+    $$$$$:   31-block  9
+    $$$$$:   31-block 10
+    $$$$$:   31-block 11
+    $$$$$:   31-block 12
+    $$$$$:   31-block 13
+    $$$$$:   31-block 14
+       1*:   32:    EXPECT_EQ(cantidadVecinosVivos(t, 1, 0), 3);
+        1:   32-block  0
+        1:   32-block  1
+    %%%%%:   32-block  2
+    %%%%%:   32-block  3
+    %%%%%:   32-block  4
+    %%%%%:   32-block  5
+    %%%%%:   32-block  6
+        1:   32-block  7
+    $$$$$:   32-block  8
+    $$$$$:   32-block  9
+    $$$$$:   32-block 10
+    $$$$$:   32-block 11
+    $$$$$:   32-block 12
+    $$$$$:   32-block 13
+    $$$$$:   32-block 14
+       1*:   33:    EXPECT_EQ(cantidadVecinosVivos(t, 1, 1), 2);
+        1:   33-block  0
+        1:   33-block  1
+    %%%%%:   33-block  2
+    %%%%%:   33-block  3
+    %%%%%:   33-block  4
+    %%%%%:   33-block  5
+    %%%%%:   33-block  6
+        1:   33-block  7
+    $$$$$:   33-block  8
+    $$$$$:   33-block  9
+    $$$$$:   33-block 10
+    $$$$$:   33-block 11
+    $$$$$:   33-block 12
+    $$$$$:   33-block 13
+    $$$$$:   33-block 14
+       1*:   34:    EXPECT_EQ(cantidadVecinosVivos(t, 1, 2), 3);
+        1:   34-block  0
+        1:   34-block  1
+    %%%%%:   34-block  2
+    %%%%%:   34-block  3
+    %%%%%:   34-block  4
+    %%%%%:   34-block  5
+    %%%%%:   34-block  6
+        1:   34-block  7
+    $$$$$:   34-block  8
+    $$$$$:   34-block  9
+    $$$$$:   34-block 10
+    $$$$$:   34-block 11
+    $$$$$:   34-block 12
+    $$$$$:   34-block 13
+    $$$$$:   34-block 14
+       1*:   35:    EXPECT_EQ(cantidadVecinosVivos(t, 2, 0), 3);
+        1:   35-block  0
+        1:   35-block  1
+    %%%%%:   35-block  2
+    %%%%%:   35-block  3
+    %%%%%:   35-block  4
+    %%%%%:   35-block  5
+    %%%%%:   35-block  6
+        1:   35-block  7
+    $$$$$:   35-block  8
+    $$$$$:   35-block  9
+    $$$$$:   35-block 10
+    $$$$$:   35-block 11
+    $$$$$:   35-block 12
+    $$$$$:   35-block 13
+    $$$$$:   35-block 14
+       1*:   36:    EXPECT_EQ(cantidadVecinosVivos(t, 2, 1), 3);
+        1:   36-block  0
+        1:   36-block  1
+    %%%%%:   36-block  2
+    %%%%%:   36-block  3
+    %%%%%:   36-block  4
+    %%%%%:   36-block  5
+    %%%%%:   36-block  6
+        1:   36-block  7
+    $$$$$:   36-block  8
+    $$$$$:   36-block  9
+    $$$$$:   36-block 10
+    $$$$$:   36-block 11
+    $$$$$:   36-block 12
+    $$$$$:   36-block 13
+    $$$$$:   36-block 14
+       1*:   37:    EXPECT_EQ(cantidadVecinosVivos(t, 2, 2), 2);
+        1:   37-block  0
+        1:   37-block  1
+    %%%%%:   37-block  2
+    %%%%%:   37-block  3
+    %%%%%:   37-block  4
+    %%%%%:   37-block  5
+    %%%%%:   37-block  6
+        1:   37-block  7
+    $$$$$:   37-block  8
+    $$$$$:   37-block  9
+    $$$$$:   37-block 10
+    $$$$$:   37-block 11
+    $$$$$:   37-block 12
+    $$$$$:   37-block 13
+    $$$$$:   37-block 14
+        1:   38:}
+------------------
+_ZN55cantidadVecinosVivosTEST_todosVivosDespuesDeUnTick_TestC1Ev:
+        1:   20:TEST(cantidadVecinosVivosTEST,todosVivosDespuesDeUnTick){
+        1:   20-block  0
+------------------
+        -:   39:
+        2:   40:TEST(cantidadVecinosVivosTEST,toroideMuertoCuatroPorCuatro){//menos de 2 vecinos o +3 vecinos
+        -:   41:    toroide t = { {false, false, false},
+        -:   42:                  {false, false, false},
+        -:   43:                  {false,false, false},
+        8:   44:                  {false,false, false}};
+        -:   45:
+       1*:   46:    EXPECT_EQ(cantidadVecinosVivos(t, 0, 0), 0);
+       1*:   47:    EXPECT_EQ(cantidadVecinosVivos(t, 0, 1), 0);
+       1*:   48:    EXPECT_EQ(cantidadVecinosVivos(t, 0, 2), 0);
+       1*:   49:    EXPECT_EQ(cantidadVecinosVivos(t, 1, 0), 0);
+       1*:   50:    EXPECT_EQ(cantidadVecinosVivos(t, 1, 1), 0);
+       1*:   51:    EXPECT_EQ(cantidadVecinosVivos(t, 1, 2), 0);
+       1*:   52:    EXPECT_EQ(cantidadVecinosVivos(t, 2, 0), 0);
+       1*:   53:    EXPECT_EQ(cantidadVecinosVivos(t, 2, 1), 0);
+       1*:   54:    EXPECT_EQ(cantidadVecinosVivos(t, 2, 2), 0);
+       1*:   55:    EXPECT_EQ(cantidadVecinosVivos(t, 3, 0), 0);
+       1*:   56:    EXPECT_EQ(cantidadVecinosVivos(t, 3, 1), 0);
+       1*:   57:    EXPECT_EQ(cantidadVecinosVivos(t, 3, 2), 0);
+        1:   58:}
+------------------
+_ZN58cantidadVecinosVivosTEST_toroideMuertoCuatroPorCuatro_Test8TestBodyEv:
+        1:   40:TEST(cantidadVecinosVivosTEST,toroideMuertoCuatroPorCuatro){//menos de 2 vecinos o +3 vecinos
+        -:   41:    toroide t = { {false, false, false},
+        -:   42:                  {false, false, false},
+        -:   43:                  {false,false, false},
+        8:   44:                  {false,false, false}};
+        1:   44-block  0
+        1:   44-block  1
+        1:   44-block  2
+        1:   44-block  3
+        1:   44-block  4
+        4:   44-block  5
+        1:   44-block  6
+    $$$$$:   44-block  7
+    $$$$$:   44-block  8
+    $$$$$:   44-block  9
+    $$$$$:   44-block 10
+    $$$$$:   44-block 11
+    $$$$$:   44-block 12
+    $$$$$:   44-block 13
+    $$$$$:   44-block 14
+    $$$$$:   44-block 15
+    $$$$$:   44-block 16
+    $$$$$:   44-block 17
+    $$$$$:   44-block 18
+        -:   45:
+       1*:   46:    EXPECT_EQ(cantidadVecinosVivos(t, 0, 0), 0);
+        1:   46-block  0
+        1:   46-block  1
+    %%%%%:   46-block  2
+    %%%%%:   46-block  3
+    %%%%%:   46-block  4
+    %%%%%:   46-block  5
+    %%%%%:   46-block  6
+        1:   46-block  7
+    $$$$$:   46-block  8
+    $$$$$:   46-block  9
+    $$$$$:   46-block 10
+    $$$$$:   46-block 11
+    $$$$$:   46-block 12
+    $$$$$:   46-block 13
+    $$$$$:   46-block 14
+       1*:   47:    EXPECT_EQ(cantidadVecinosVivos(t, 0, 1), 0);
+        1:   47-block  0
+        1:   47-block  1
+    %%%%%:   47-block  2
+    %%%%%:   47-block  3
+    %%%%%:   47-block  4
+    %%%%%:   47-block  5
+    %%%%%:   47-block  6
+        1:   47-block  7
+    $$$$$:   47-block  8
+    $$$$$:   47-block  9
+    $$$$$:   47-block 10
+    $$$$$:   47-block 11
+    $$$$$:   47-block 12
+    $$$$$:   47-block 13
+    $$$$$:   47-block 14
+       1*:   48:    EXPECT_EQ(cantidadVecinosVivos(t, 0, 2), 0);
+        1:   48-block  0
+        1:   48-block  1
+    %%%%%:   48-block  2
+    %%%%%:   48-block  3
+    %%%%%:   48-block  4
+    %%%%%:   48-block  5
+    %%%%%:   48-block  6
+        1:   48-block  7
+    $$$$$:   48-block  8
+    $$$$$:   48-block  9
+    $$$$$:   48-block 10
+    $$$$$:   48-block 11
+    $$$$$:   48-block 12
+    $$$$$:   48-block 13
+    $$$$$:   48-block 14
+       1*:   49:    EXPECT_EQ(cantidadVecinosVivos(t, 1, 0), 0);
+        1:   49-block  0
+        1:   49-block  1
+    %%%%%:   49-block  2
+    %%%%%:   49-block  3
+    %%%%%:   49-block  4
+    %%%%%:   49-block  5
+    %%%%%:   49-block  6
+        1:   49-block  7
+    $$$$$:   49-block  8
+    $$$$$:   49-block  9
+    $$$$$:   49-block 10
+    $$$$$:   49-block 11
+    $$$$$:   49-block 12
+    $$$$$:   49-block 13
+    $$$$$:   49-block 14
+       1*:   50:    EXPECT_EQ(cantidadVecinosVivos(t, 1, 1), 0);
+        1:   50-block  0
+        1:   50-block  1
+    %%%%%:   50-block  2
+    %%%%%:   50-block  3
+    %%%%%:   50-block  4
+    %%%%%:   50-block  5
+    %%%%%:   50-block  6
+        1:   50-block  7
+    $$$$$:   50-block  8
+    $$$$$:   50-block  9
+    $$$$$:   50-block 10
+    $$$$$:   50-block 11
+    $$$$$:   50-block 12
+    $$$$$:   50-block 13
+    $$$$$:   50-block 14
+       1*:   51:    EXPECT_EQ(cantidadVecinosVivos(t, 1, 2), 0);
+        1:   51-block  0
+        1:   51-block  1
+    %%%%%:   51-block  2
+    %%%%%:   51-block  3
+    %%%%%:   51-block  4
+    %%%%%:   51-block  5
+    %%%%%:   51-block  6
+        1:   51-block  7
+    $$$$$:   51-block  8
+    $$$$$:   51-block  9
+    $$$$$:   51-block 10
+    $$$$$:   51-block 11
+    $$$$$:   51-block 12
+    $$$$$:   51-block 13
+    $$$$$:   51-block 14
+       1*:   52:    EXPECT_EQ(cantidadVecinosVivos(t, 2, 0), 0);
+        1:   52-block  0
+        1:   52-block  1
+    %%%%%:   52-block  2
+    %%%%%:   52-block  3
+    %%%%%:   52-block  4
+    %%%%%:   52-block  5
+    %%%%%:   52-block  6
+        1:   52-block  7
+    $$$$$:   52-block  8
+    $$$$$:   52-block  9
+    $$$$$:   52-block 10
+    $$$$$:   52-block 11
+    $$$$$:   52-block 12
+    $$$$$:   52-block 13
+    $$$$$:   52-block 14
+       1*:   53:    EXPECT_EQ(cantidadVecinosVivos(t, 2, 1), 0);
+        1:   53-block  0
+        1:   53-block  1
+    %%%%%:   53-block  2
+    %%%%%:   53-block  3
+    %%%%%:   53-block  4
+    %%%%%:   53-block  5
+    %%%%%:   53-block  6
+        1:   53-block  7
+    $$$$$:   53-block  8
+    $$$$$:   53-block  9
+    $$$$$:   53-block 10
+    $$$$$:   53-block 11
+    $$$$$:   53-block 12
+    $$$$$:   53-block 13
+    $$$$$:   53-block 14
+       1*:   54:    EXPECT_EQ(cantidadVecinosVivos(t, 2, 2), 0);
+        1:   54-block  0
+        1:   54-block  1
+    %%%%%:   54-block  2
+    %%%%%:   54-block  3
+    %%%%%:   54-block  4
+    %%%%%:   54-block  5
+    %%%%%:   54-block  6
+        1:   54-block  7
+    $$$$$:   54-block  8
+    $$$$$:   54-block  9
+    $$$$$:   54-block 10
+    $$$$$:   54-block 11
+    $$$$$:   54-block 12
+    $$$$$:   54-block 13
+    $$$$$:   54-block 14
+       1*:   55:    EXPECT_EQ(cantidadVecinosVivos(t, 3, 0), 0);
+        1:   55-block  0
+        1:   55-block  1
+    %%%%%:   55-block  2
+    %%%%%:   55-block  3
+    %%%%%:   55-block  4
+    %%%%%:   55-block  5
+    %%%%%:   55-block  6
+        1:   55-block  7
+    $$$$$:   55-block  8
+    $$$$$:   55-block  9
+    $$$$$:   55-block 10
+    $$$$$:   55-block 11
+    $$$$$:   55-block 12
+    $$$$$:   55-block 13
+    $$$$$:   55-block 14
+       1*:   56:    EXPECT_EQ(cantidadVecinosVivos(t, 3, 1), 0);
+        1:   56-block  0
+        1:   56-block  1
+    %%%%%:   56-block  2
+    %%%%%:   56-block  3
+    %%%%%:   56-block  4
+    %%%%%:   56-block  5
+    %%%%%:   56-block  6
+        1:   56-block  7
+    $$$$$:   56-block  8
+    $$$$$:   56-block  9
+    $$$$$:   56-block 10
+    $$$$$:   56-block 11
+    $$$$$:   56-block 12
+    $$$$$:   56-block 13
+    $$$$$:   56-block 14
+       1*:   57:    EXPECT_EQ(cantidadVecinosVivos(t, 3, 2), 0);
+        1:   57-block  0
+        1:   57-block  1
+    %%%%%:   57-block  2
+    %%%%%:   57-block  3
+    %%%%%:   57-block  4
+    %%%%%:   57-block  5
+    %%%%%:   57-block  6
+        1:   57-block  7
+    $$$$$:   57-block  8
+    $$$$$:   57-block  9
+    $$$$$:   57-block 10
+    $$$$$:   57-block 11
+    $$$$$:   57-block 12
+    $$$$$:   57-block 13
+    $$$$$:   57-block 14
+        1:   58:}
+------------------
+_ZN58cantidadVecinosVivosTEST_toroideMuertoCuatroPorCuatro_TestC1Ev:
+        1:   40:TEST(cantidadVecinosVivosTEST,toroideMuertoCuatroPorCuatro){//menos de 2 vecinos o +3 vecinos
+        1:   40-block  0
+------------------
+        -:   59:
+        2:   60:TEST(cantidadVecinosVivosTEST,toroideTodoVivoCuatroPorCuatro){//menos de 2 vecinos o +3 vecinos
+        -:   61:    toroide t = { {true, true, true},
+        -:   62:                  {true, true, true},
+        -:   63:                  {true, true, true},
+        8:   64:                  {true, true, true}};
+        -:   65:
+       1*:   66:    EXPECT_EQ(cantidadVecinosVivos(t, 0, 0), 8);
+       1*:   67:    EXPECT_EQ(cantidadVecinosVivos(t, 0, 1), 8);
+       1*:   68:    EXPECT_EQ(cantidadVecinosVivos(t, 0, 2), 8);
+       1*:   69:    EXPECT_EQ(cantidadVecinosVivos(t, 1, 0), 8);
+       1*:   70:    EXPECT_EQ(cantidadVecinosVivos(t, 1, 1), 8);
+       1*:   71:    EXPECT_EQ(cantidadVecinosVivos(t, 1, 2), 8);
+       1*:   72:    EXPECT_EQ(cantidadVecinosVivos(t, 2, 0), 8);
+       1*:   73:    EXPECT_EQ(cantidadVecinosVivos(t, 2, 1), 8);
+       1*:   74:    EXPECT_EQ(cantidadVecinosVivos(t, 2, 2), 8);
+       1*:   75:    EXPECT_EQ(cantidadVecinosVivos(t, 3, 0), 8);
+       1*:   76:    EXPECT_EQ(cantidadVecinosVivos(t, 3, 1), 8);
+       1*:   77:    EXPECT_EQ(cantidadVecinosVivos(t, 3, 2), 8);
+        1:   78:}
+------------------
+_ZN60cantidadVecinosVivosTEST_toroideTodoVivoCuatroPorCuatro_Test8TestBodyEv:
+        1:   60:TEST(cantidadVecinosVivosTEST,toroideTodoVivoCuatroPorCuatro){//menos de 2 vecinos o +3 vecinos
+        -:   61:    toroide t = { {true, true, true},
+        -:   62:                  {true, true, true},
+        -:   63:                  {true, true, true},
+        8:   64:                  {true, true, true}};
+        1:   64-block  0
+        1:   64-block  1
+        1:   64-block  2
+        1:   64-block  3
+        1:   64-block  4
+        4:   64-block  5
+        1:   64-block  6
+    $$$$$:   64-block  7
+    $$$$$:   64-block  8
+    $$$$$:   64-block  9
+    $$$$$:   64-block 10
+    $$$$$:   64-block 11
+    $$$$$:   64-block 12
+    $$$$$:   64-block 13
+    $$$$$:   64-block 14
+    $$$$$:   64-block 15
+    $$$$$:   64-block 16
+    $$$$$:   64-block 17
+    $$$$$:   64-block 18
+        -:   65:
+       1*:   66:    EXPECT_EQ(cantidadVecinosVivos(t, 0, 0), 8);
+        1:   66-block  0
+        1:   66-block  1
+    %%%%%:   66-block  2
+    %%%%%:   66-block  3
+    %%%%%:   66-block  4
+    %%%%%:   66-block  5
+    %%%%%:   66-block  6
+        1:   66-block  7
+    $$$$$:   66-block  8
+    $$$$$:   66-block  9
+    $$$$$:   66-block 10
+    $$$$$:   66-block 11
+    $$$$$:   66-block 12
+    $$$$$:   66-block 13
+    $$$$$:   66-block 14
+       1*:   67:    EXPECT_EQ(cantidadVecinosVivos(t, 0, 1), 8);
+        1:   67-block  0
+        1:   67-block  1
+    %%%%%:   67-block  2
+    %%%%%:   67-block  3
+    %%%%%:   67-block  4
+    %%%%%:   67-block  5
+    %%%%%:   67-block  6
+        1:   67-block  7
+    $$$$$:   67-block  8
+    $$$$$:   67-block  9
+    $$$$$:   67-block 10
+    $$$$$:   67-block 11
+    $$$$$:   67-block 12
+    $$$$$:   67-block 13
+    $$$$$:   67-block 14
+       1*:   68:    EXPECT_EQ(cantidadVecinosVivos(t, 0, 2), 8);
+        1:   68-block  0
+        1:   68-block  1
+    %%%%%:   68-block  2
+    %%%%%:   68-block  3
+    %%%%%:   68-block  4
+    %%%%%:   68-block  5
+    %%%%%:   68-block  6
+        1:   68-block  7
+    $$$$$:   68-block  8
+    $$$$$:   68-block  9
+    $$$$$:   68-block 10
+    $$$$$:   68-block 11
+    $$$$$:   68-block 12
+    $$$$$:   68-block 13
+    $$$$$:   68-block 14
+       1*:   69:    EXPECT_EQ(cantidadVecinosVivos(t, 1, 0), 8);
+        1:   69-block  0
+        1:   69-block  1
+    %%%%%:   69-block  2
+    %%%%%:   69-block  3
+    %%%%%:   69-block  4
+    %%%%%:   69-block  5
+    %%%%%:   69-block  6
+        1:   69-block  7
+    $$$$$:   69-block  8
+    $$$$$:   69-block  9
+    $$$$$:   69-block 10
+    $$$$$:   69-block 11
+    $$$$$:   69-block 12
+    $$$$$:   69-block 13
+    $$$$$:   69-block 14
+       1*:   70:    EXPECT_EQ(cantidadVecinosVivos(t, 1, 1), 8);
+        1:   70-block  0
+        1:   70-block  1
+    %%%%%:   70-block  2
+    %%%%%:   70-block  3
+    %%%%%:   70-block  4
+    %%%%%:   70-block  5
+    %%%%%:   70-block  6
+        1:   70-block  7
+    $$$$$:   70-block  8
+    $$$$$:   70-block  9
+    $$$$$:   70-block 10
+    $$$$$:   70-block 11
+    $$$$$:   70-block 12
+    $$$$$:   70-block 13
+    $$$$$:   70-block 14
+       1*:   71:    EXPECT_EQ(cantidadVecinosVivos(t, 1, 2), 8);
+        1:   71-block  0
+        1:   71-block  1
+    %%%%%:   71-block  2
+    %%%%%:   71-block  3
+    %%%%%:   71-block  4
+    %%%%%:   71-block  5
+    %%%%%:   71-block  6
+        1:   71-block  7
+    $$$$$:   71-block  8
+    $$$$$:   71-block  9
+    $$$$$:   71-block 10
+    $$$$$:   71-block 11
+    $$$$$:   71-block 12
+    $$$$$:   71-block 13
+    $$$$$:   71-block 14
+       1*:   72:    EXPECT_EQ(cantidadVecinosVivos(t, 2, 0), 8);
+        1:   72-block  0
+        1:   72-block  1
+    %%%%%:   72-block  2
+    %%%%%:   72-block  3
+    %%%%%:   72-block  4
+    %%%%%:   72-block  5
+    %%%%%:   72-block  6
+        1:   72-block  7
+    $$$$$:   72-block  8
+    $$$$$:   72-block  9
+    $$$$$:   72-block 10
+    $$$$$:   72-block 11
+    $$$$$:   72-block 12
+    $$$$$:   72-block 13
+    $$$$$:   72-block 14
+       1*:   73:    EXPECT_EQ(cantidadVecinosVivos(t, 2, 1), 8);
+        1:   73-block  0
+        1:   73-block  1
+    %%%%%:   73-block  2
+    %%%%%:   73-block  3
+    %%%%%:   73-block  4
+    %%%%%:   73-block  5
+    %%%%%:   73-block  6
+        1:   73-block  7
+    $$$$$:   73-block  8
+    $$$$$:   73-block  9
+    $$$$$:   73-block 10
+    $$$$$:   73-block 11
+    $$$$$:   73-block 12
+    $$$$$:   73-block 13
+    $$$$$:   73-block 14
+       1*:   74:    EXPECT_EQ(cantidadVecinosVivos(t, 2, 2), 8);
+        1:   74-block  0
+        1:   74-block  1
+    %%%%%:   74-block  2
+    %%%%%:   74-block  3
+    %%%%%:   74-block  4
+    %%%%%:   74-block  5
+    %%%%%:   74-block  6
+        1:   74-block  7
+    $$$$$:   74-block  8
+    $$$$$:   74-block  9
+    $$$$$:   74-block 10
+    $$$$$:   74-block 11
+    $$$$$:   74-block 12
+    $$$$$:   74-block 13
+    $$$$$:   74-block 14
+       1*:   75:    EXPECT_EQ(cantidadVecinosVivos(t, 3, 0), 8);
+        1:   75-block  0
+        1:   75-block  1
+    %%%%%:   75-block  2
+    %%%%%:   75-block  3
+    %%%%%:   75-block  4
+    %%%%%:   75-block  5
+    %%%%%:   75-block  6
+        1:   75-block  7
+    $$$$$:   75-block  8
+    $$$$$:   75-block  9
+    $$$$$:   75-block 10
+    $$$$$:   75-block 11
+    $$$$$:   75-block 12
+    $$$$$:   75-block 13
+    $$$$$:   75-block 14
+       1*:   76:    EXPECT_EQ(cantidadVecinosVivos(t, 3, 1), 8);
+        1:   76-block  0
+        1:   76-block  1
+    %%%%%:   76-block  2
+    %%%%%:   76-block  3
+    %%%%%:   76-block  4
+    %%%%%:   76-block  5
+    %%%%%:   76-block  6
+        1:   76-block  7
+    $$$$$:   76-block  8
+    $$$$$:   76-block  9
+    $$$$$:   76-block 10
+    $$$$$:   76-block 11
+    $$$$$:   76-block 12
+    $$$$$:   76-block 13
+    $$$$$:   76-block 14
+       1*:   77:    EXPECT_EQ(cantidadVecinosVivos(t, 3, 2), 8);
+        1:   77-block  0
+        1:   77-block  1
+    %%%%%:   77-block  2
+    %%%%%:   77-block  3
+    %%%%%:   77-block  4
+    %%%%%:   77-block  5
+    %%%%%:   77-block  6
+        1:   77-block  7
+    $$$$$:   77-block  8
+    $$$$$:   77-block  9
+    $$$$$:   77-block 10
+    $$$$$:   77-block 11
+    $$$$$:   77-block 12
+    $$$$$:   77-block 13
+    $$$$$:   77-block 14
+        1:   78:}
+------------------
+_ZN60cantidadVecinosVivosTEST_toroideTodoVivoCuatroPorCuatro_TestC1Ev:
+        1:   60:TEST(cantidadVecinosVivosTEST,toroideTodoVivoCuatroPorCuatro){//menos de 2 vecinos o +3 vecinos
+        1:   60-block  0
+------------------

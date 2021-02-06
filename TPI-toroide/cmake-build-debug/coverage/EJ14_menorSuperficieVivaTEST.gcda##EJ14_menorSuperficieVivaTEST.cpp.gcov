@@ -1,0 +1,803 @@
+        -:    0:Source:/cygdrive/c/Users/Juan/Desktop/TPI-toroide/tests/EJ14_menorSuperficieVivaTEST.cpp
+        -:    0:Graph:/cygdrive/c/Users/Juan/Desktop/TPI-toroide/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ14_menorSuperficieVivaTEST.gcno
+        -:    0:Data:/cygdrive/c/Users/Juan/Desktop/TPI-toroide/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ14_menorSuperficieVivaTEST.gcda
+        -:    0:Runs:1
+        -:    1:#include "../ejercicios.h"
+        -:    2:#include "gtest/gtest.h"
+        -:    3:
+        -:    4:using namespace std;
+        -:    5:
+        2:    6:TEST(menorSuperficieVivaTEST, enunciado){
+        -:    7:    toroide t = {
+        -:    8:            {true, false, false, true},   // 1
+        -:    9:            {false, false, false, false}, // 2
+        -:   10:            {false, false, false, false}, // 3
+        8:   11:            {true, true, false, false}};  // 4
+        -:   12:
+        1:   13:    int res = menorSuperficieViva(t);
+       1*:   14:    EXPECT_EQ(res, 6);
+        1:   15:}
+------------------
+_ZN38menorSuperficieVivaTEST_enunciado_Test8TestBodyEv:
+        1:    6:TEST(menorSuperficieVivaTEST, enunciado){
+        -:    7:    toroide t = {
+        -:    8:            {true, false, false, true},   // 1
+        -:    9:            {false, false, false, false}, // 2
+        -:   10:            {false, false, false, false}, // 3
+        8:   11:            {true, true, false, false}};  // 4
+        1:   11-block  0
+        1:   11-block  1
+        1:   11-block  2
+        1:   11-block  3
+        1:   11-block  4
+        4:   11-block  5
+        1:   11-block  6
+    $$$$$:   11-block  7
+    $$$$$:   11-block  8
+    $$$$$:   11-block  9
+    $$$$$:   11-block 10
+    $$$$$:   11-block 11
+    $$$$$:   11-block 12
+    $$$$$:   11-block 13
+    $$$$$:   11-block 14
+    $$$$$:   11-block 15
+    $$$$$:   11-block 16
+    $$$$$:   11-block 17
+    $$$$$:   11-block 18
+        -:   12:
+        1:   13:    int res = menorSuperficieViva(t);
+       1*:   14:    EXPECT_EQ(res, 6);
+        1:   14-block  0
+        1:   14-block  1
+    %%%%%:   14-block  2
+    %%%%%:   14-block  3
+    %%%%%:   14-block  4
+    %%%%%:   14-block  5
+    %%%%%:   14-block  6
+        1:   14-block  7
+    $$$$$:   14-block  8
+    $$$$$:   14-block  9
+    $$$$$:   14-block 10
+    $$$$$:   14-block 11
+    $$$$$:   14-block 12
+    $$$$$:   14-block 13
+        1:   15:}
+------------------
+_ZN38menorSuperficieVivaTEST_enunciado_TestC1Ev:
+        1:    6:TEST(menorSuperficieVivaTEST, enunciado){
+        1:    6-block  0
+------------------
+        -:   16:
+        -:   17:
+        -:   18:/*###########Nuestros TEST################*/
+        2:   19:TEST(menorSuperficieVivaTEST, unaSolaConVida){
+        -:   20:    toroide t = {
+        -:   21:            {false, false, false, false},   // 1
+        -:   22:            {false, false, false, false}, // 2
+        -:   23:            {false, true, false, false}, // 3
+        8:   24:            {false, false, false, false}};  // 4
+        -:   25:
+        1:   26:    int res = menorSuperficieViva(t);
+       1*:   27:    EXPECT_EQ(res, 1);
+        1:   28:}
+------------------
+_ZN43menorSuperficieVivaTEST_unaSolaConVida_Test8TestBodyEv:
+        1:   19:TEST(menorSuperficieVivaTEST, unaSolaConVida){
+        -:   20:    toroide t = {
+        -:   21:            {false, false, false, false},   // 1
+        -:   22:            {false, false, false, false}, // 2
+        -:   23:            {false, true, false, false}, // 3
+        8:   24:            {false, false, false, false}};  // 4
+        1:   24-block  0
+        1:   24-block  1
+        1:   24-block  2
+        1:   24-block  3
+        1:   24-block  4
+        4:   24-block  5
+        1:   24-block  6
+    $$$$$:   24-block  7
+    $$$$$:   24-block  8
+    $$$$$:   24-block  9
+    $$$$$:   24-block 10
+    $$$$$:   24-block 11
+    $$$$$:   24-block 12
+    $$$$$:   24-block 13
+    $$$$$:   24-block 14
+    $$$$$:   24-block 15
+    $$$$$:   24-block 16
+    $$$$$:   24-block 17
+    $$$$$:   24-block 18
+        -:   25:
+        1:   26:    int res = menorSuperficieViva(t);
+       1*:   27:    EXPECT_EQ(res, 1);
+        1:   27-block  0
+        1:   27-block  1
+    %%%%%:   27-block  2
+    %%%%%:   27-block  3
+    %%%%%:   27-block  4
+    %%%%%:   27-block  5
+    %%%%%:   27-block  6
+        1:   27-block  7
+    $$$$$:   27-block  8
+    $$$$$:   27-block  9
+    $$$$$:   27-block 10
+    $$$$$:   27-block 11
+    $$$$$:   27-block 12
+    $$$$$:   27-block 13
+        1:   28:}
+------------------
+_ZN43menorSuperficieVivaTEST_unaSolaConVida_TestC1Ev:
+        1:   19:TEST(menorSuperficieVivaTEST, unaSolaConVida){
+        1:   19-block  0
+------------------
+        -:   29:
+        2:   30:TEST(menorSuperficieVivaTEST, lineaHorizontalViva){
+        -:   31:    toroide t = {
+        -:   32:            {false,false, false ,false,false},   // 1
+        -:   33:            {false,false ,false ,false,false}, // 2
+        -:   34:            {false,true  ,true  ,true ,false}, // 3
+        -:   35:            {false,false ,false  ,false,false},  // 4
+        9:   36:            {false,false ,false ,false,false}}; // 5
+        1:   37:    int res = menorSuperficieViva(t);
+       1*:   38:    EXPECT_EQ(res, 3);
+        1:   39:}
+------------------
+_ZN48menorSuperficieVivaTEST_lineaHorizontalViva_Test8TestBodyEv:
+        1:   30:TEST(menorSuperficieVivaTEST, lineaHorizontalViva){
+        -:   31:    toroide t = {
+        -:   32:            {false,false, false ,false,false},   // 1
+        -:   33:            {false,false ,false ,false,false}, // 2
+        -:   34:            {false,true  ,true  ,true ,false}, // 3
+        -:   35:            {false,false ,false  ,false,false},  // 4
+        9:   36:            {false,false ,false ,false,false}}; // 5
+        1:   36-block  0
+        1:   36-block  1
+        1:   36-block  2
+        1:   36-block  3
+        1:   36-block  4
+        1:   36-block  5
+        5:   36-block  6
+        1:   36-block  7
+    $$$$$:   36-block  8
+    $$$$$:   36-block  9
+    $$$$$:   36-block 10
+    $$$$$:   36-block 11
+    $$$$$:   36-block 12
+    $$$$$:   36-block 13
+    $$$$$:   36-block 14
+    $$$$$:   36-block 15
+    $$$$$:   36-block 16
+    $$$$$:   36-block 17
+    $$$$$:   36-block 18
+    $$$$$:   36-block 19
+    $$$$$:   36-block 20
+    $$$$$:   36-block 21
+        1:   37:    int res = menorSuperficieViva(t);
+       1*:   38:    EXPECT_EQ(res, 3);
+        1:   38-block  0
+        1:   38-block  1
+    %%%%%:   38-block  2
+    %%%%%:   38-block  3
+    %%%%%:   38-block  4
+    %%%%%:   38-block  5
+    %%%%%:   38-block  6
+        1:   38-block  7
+    $$$$$:   38-block  8
+    $$$$$:   38-block  9
+    $$$$$:   38-block 10
+    $$$$$:   38-block 11
+    $$$$$:   38-block 12
+    $$$$$:   38-block 13
+        1:   39:}
+------------------
+_ZN48menorSuperficieVivaTEST_lineaHorizontalViva_TestC1Ev:
+        1:   30:TEST(menorSuperficieVivaTEST, lineaHorizontalViva){
+        1:   30-block  0
+------------------
+        -:   40:
+        2:   41:TEST(menorSuperficieVivaTEST, lineaVerticalViva){
+        -:   42:    toroide t = {
+        -:   43:            {false,false, false ,false,false},   // 1
+        -:   44:            {false,false ,true ,false,false}, // 2
+        -:   45:            {false,false  ,true  ,false ,false}, // 3
+        -:   46:            {false,false ,true ,false,false},  // 4
+        9:   47:            {false,false ,false ,false,false}}; // 5
+        1:   48:    int res = menorSuperficieViva(t);
+       1*:   49:    EXPECT_EQ(res, 3);
+        1:   50:}
+------------------
+_ZN46menorSuperficieVivaTEST_lineaVerticalViva_Test8TestBodyEv:
+        1:   41:TEST(menorSuperficieVivaTEST, lineaVerticalViva){
+        -:   42:    toroide t = {
+        -:   43:            {false,false, false ,false,false},   // 1
+        -:   44:            {false,false ,true ,false,false}, // 2
+        -:   45:            {false,false  ,true  ,false ,false}, // 3
+        -:   46:            {false,false ,true ,false,false},  // 4
+        9:   47:            {false,false ,false ,false,false}}; // 5
+        1:   47-block  0
+        1:   47-block  1
+        1:   47-block  2
+        1:   47-block  3
+        1:   47-block  4
+        1:   47-block  5
+        5:   47-block  6
+        1:   47-block  7
+    $$$$$:   47-block  8
+    $$$$$:   47-block  9
+    $$$$$:   47-block 10
+    $$$$$:   47-block 11
+    $$$$$:   47-block 12
+    $$$$$:   47-block 13
+    $$$$$:   47-block 14
+    $$$$$:   47-block 15
+    $$$$$:   47-block 16
+    $$$$$:   47-block 17
+    $$$$$:   47-block 18
+    $$$$$:   47-block 19
+    $$$$$:   47-block 20
+    $$$$$:   47-block 21
+        1:   48:    int res = menorSuperficieViva(t);
+       1*:   49:    EXPECT_EQ(res, 3);
+        1:   49-block  0
+        1:   49-block  1
+    %%%%%:   49-block  2
+    %%%%%:   49-block  3
+    %%%%%:   49-block  4
+    %%%%%:   49-block  5
+    %%%%%:   49-block  6
+        1:   49-block  7
+    $$$$$:   49-block  8
+    $$$$$:   49-block  9
+    $$$$$:   49-block 10
+    $$$$$:   49-block 11
+    $$$$$:   49-block 12
+    $$$$$:   49-block 13
+        1:   50:}
+------------------
+_ZN46menorSuperficieVivaTEST_lineaVerticalViva_TestC1Ev:
+        1:   41:TEST(menorSuperficieVivaTEST, lineaVerticalViva){
+        1:   41-block  0
+------------------
+        -:   51:
+        2:   52:TEST(menorSuperficieVivaTEST, cruzCentralViva){
+        -:   53:    toroide t = {
+        -:   54:            {false,false, false ,false,false},   // 1
+        -:   55:            {false,false ,true  ,false,false}, // 2
+        -:   56:            {false,true  ,true  ,true ,false}, // 3
+        -:   57:            {false,false ,true  ,false,false},  // 4
+        9:   58:            {false,false ,false ,false,false}}; // 5
+        1:   59:     int res = menorSuperficieViva(t);
+       1*:   60:    EXPECT_EQ(res, 9);
+        1:   61:}
+------------------
+_ZN44menorSuperficieVivaTEST_cruzCentralViva_Test8TestBodyEv:
+        1:   52:TEST(menorSuperficieVivaTEST, cruzCentralViva){
+        -:   53:    toroide t = {
+        -:   54:            {false,false, false ,false,false},   // 1
+        -:   55:            {false,false ,true  ,false,false}, // 2
+        -:   56:            {false,true  ,true  ,true ,false}, // 3
+        -:   57:            {false,false ,true  ,false,false},  // 4
+        9:   58:            {false,false ,false ,false,false}}; // 5
+        1:   58-block  0
+        1:   58-block  1
+        1:   58-block  2
+        1:   58-block  3
+        1:   58-block  4
+        1:   58-block  5
+        5:   58-block  6
+        1:   58-block  7
+    $$$$$:   58-block  8
+    $$$$$:   58-block  9
+    $$$$$:   58-block 10
+    $$$$$:   58-block 11
+    $$$$$:   58-block 12
+    $$$$$:   58-block 13
+    $$$$$:   58-block 14
+    $$$$$:   58-block 15
+    $$$$$:   58-block 16
+    $$$$$:   58-block 17
+    $$$$$:   58-block 18
+    $$$$$:   58-block 19
+    $$$$$:   58-block 20
+    $$$$$:   58-block 21
+        1:   59:     int res = menorSuperficieViva(t);
+       1*:   60:    EXPECT_EQ(res, 9);
+        1:   60-block  0
+        1:   60-block  1
+    %%%%%:   60-block  2
+    %%%%%:   60-block  3
+    %%%%%:   60-block  4
+    %%%%%:   60-block  5
+    %%%%%:   60-block  6
+        1:   60-block  7
+    $$$$$:   60-block  8
+    $$$$$:   60-block  9
+    $$$$$:   60-block 10
+    $$$$$:   60-block 11
+    $$$$$:   60-block 12
+    $$$$$:   60-block 13
+        1:   61:}
+------------------
+_ZN44menorSuperficieVivaTEST_cruzCentralViva_TestC1Ev:
+        1:   52:TEST(menorSuperficieVivaTEST, cruzCentralViva){
+        1:   52-block  0
+------------------
+        -:   62:
+        -:   63:
+        2:   64:TEST(menorSuperficieVivaTEST, bordesVivos){
+        -:   65:    toroide t = {
+        -:   66:            {true ,true ,true ,true ,true},   // 1
+        -:   67:            {true ,false,false,false,true}, // 2
+        -:   68:            {true ,false,false,false ,true}, // 3
+        -:   69:            {true ,false,false,false,true},  // 4
+        9:   70:            {true ,true ,true ,true ,true}};  //5
+        1:   71:    int res = menorSuperficieViva(t);
+       1*:   72:    EXPECT_EQ(res, 25);
+        1:   73:}
+------------------
+_ZN40menorSuperficieVivaTEST_bordesVivos_Test8TestBodyEv:
+        1:   64:TEST(menorSuperficieVivaTEST, bordesVivos){
+        -:   65:    toroide t = {
+        -:   66:            {true ,true ,true ,true ,true},   // 1
+        -:   67:            {true ,false,false,false,true}, // 2
+        -:   68:            {true ,false,false,false ,true}, // 3
+        -:   69:            {true ,false,false,false,true},  // 4
+        9:   70:            {true ,true ,true ,true ,true}};  //5
+        1:   70-block  0
+        1:   70-block  1
+        1:   70-block  2
+        1:   70-block  3
+        1:   70-block  4
+        1:   70-block  5
+        5:   70-block  6
+        1:   70-block  7
+    $$$$$:   70-block  8
+    $$$$$:   70-block  9
+    $$$$$:   70-block 10
+    $$$$$:   70-block 11
+    $$$$$:   70-block 12
+    $$$$$:   70-block 13
+    $$$$$:   70-block 14
+    $$$$$:   70-block 15
+    $$$$$:   70-block 16
+    $$$$$:   70-block 17
+    $$$$$:   70-block 18
+    $$$$$:   70-block 19
+    $$$$$:   70-block 20
+    $$$$$:   70-block 21
+        1:   71:    int res = menorSuperficieViva(t);
+       1*:   72:    EXPECT_EQ(res, 25);
+        1:   72-block  0
+        1:   72-block  1
+    %%%%%:   72-block  2
+    %%%%%:   72-block  3
+    %%%%%:   72-block  4
+    %%%%%:   72-block  5
+    %%%%%:   72-block  6
+        1:   72-block  7
+    $$$$$:   72-block  8
+    $$$$$:   72-block  9
+    $$$$$:   72-block 10
+    $$$$$:   72-block 11
+    $$$$$:   72-block 12
+    $$$$$:   72-block 13
+        1:   73:}
+------------------
+_ZN40menorSuperficieVivaTEST_bordesVivos_TestC1Ev:
+        1:   64:TEST(menorSuperficieVivaTEST, bordesVivos){
+        1:   64-block  0
+------------------
+        -:   74:
+        2:   75:TEST(menorSuperficieVivaTEST, rectanguloVivoCentro){
+        -:   76:    toroide t = {
+        -:   77:            {false,false, false ,false,false},   // 1
+        -:   78:            {false,true ,true  ,true,false}, // 2
+        -:   79:            {false,true  ,true  ,true ,false}, // 3
+        -:   80:            {false,true ,true  ,true,false},  // 4
+        9:   81:            {false,false ,false ,false,false}}; // 5
+        1:   82:    int res = menorSuperficieViva(t);
+       1*:   83:    EXPECT_EQ(res, 9);
+        1:   84:}
+------------------
+_ZN49menorSuperficieVivaTEST_rectanguloVivoCentro_Test8TestBodyEv:
+        1:   75:TEST(menorSuperficieVivaTEST, rectanguloVivoCentro){
+        -:   76:    toroide t = {
+        -:   77:            {false,false, false ,false,false},   // 1
+        -:   78:            {false,true ,true  ,true,false}, // 2
+        -:   79:            {false,true  ,true  ,true ,false}, // 3
+        -:   80:            {false,true ,true  ,true,false},  // 4
+        9:   81:            {false,false ,false ,false,false}}; // 5
+        1:   81-block  0
+        1:   81-block  1
+        1:   81-block  2
+        1:   81-block  3
+        1:   81-block  4
+        1:   81-block  5
+        5:   81-block  6
+        1:   81-block  7
+    $$$$$:   81-block  8
+    $$$$$:   81-block  9
+    $$$$$:   81-block 10
+    $$$$$:   81-block 11
+    $$$$$:   81-block 12
+    $$$$$:   81-block 13
+    $$$$$:   81-block 14
+    $$$$$:   81-block 15
+    $$$$$:   81-block 16
+    $$$$$:   81-block 17
+    $$$$$:   81-block 18
+    $$$$$:   81-block 19
+    $$$$$:   81-block 20
+    $$$$$:   81-block 21
+        1:   82:    int res = menorSuperficieViva(t);
+       1*:   83:    EXPECT_EQ(res, 9);
+        1:   83-block  0
+        1:   83-block  1
+    %%%%%:   83-block  2
+    %%%%%:   83-block  3
+    %%%%%:   83-block  4
+    %%%%%:   83-block  5
+    %%%%%:   83-block  6
+        1:   83-block  7
+    $$$$$:   83-block  8
+    $$$$$:   83-block  9
+    $$$$$:   83-block 10
+    $$$$$:   83-block 11
+    $$$$$:   83-block 12
+    $$$$$:   83-block 13
+        1:   84:}
+------------------
+_ZN49menorSuperficieVivaTEST_rectanguloVivoCentro_TestC1Ev:
+        1:   75:TEST(menorSuperficieVivaTEST, rectanguloVivoCentro){
+        1:   75-block  0
+------------------
+        -:   85:
+        2:   86:TEST(menorSuperficieVivaTEST, todasVivas){
+        -:   87:    toroide t = {
+        -:   88:            {true,true, true,true,true},   // 1
+        -:   89:            {true,true ,true  ,true,true}, // 2
+        -:   90:            {true,true  ,true  ,true ,true}, // 3
+        -:   91:            {true,true ,true  ,true,true},  // 4
+        9:   92:            {true,true ,true ,true,true}}; // 5
+        1:   93:    int res = menorSuperficieViva(t);
+       1*:   94:    EXPECT_EQ(res, 25);
+        1:   95:}
+------------------
+_ZN39menorSuperficieVivaTEST_todasVivas_Test8TestBodyEv:
+        1:   86:TEST(menorSuperficieVivaTEST, todasVivas){
+        -:   87:    toroide t = {
+        -:   88:            {true,true, true,true,true},   // 1
+        -:   89:            {true,true ,true  ,true,true}, // 2
+        -:   90:            {true,true  ,true  ,true ,true}, // 3
+        -:   91:            {true,true ,true  ,true,true},  // 4
+        9:   92:            {true,true ,true ,true,true}}; // 5
+        1:   92-block  0
+        1:   92-block  1
+        1:   92-block  2
+        1:   92-block  3
+        1:   92-block  4
+        1:   92-block  5
+        5:   92-block  6
+        1:   92-block  7
+    $$$$$:   92-block  8
+    $$$$$:   92-block  9
+    $$$$$:   92-block 10
+    $$$$$:   92-block 11
+    $$$$$:   92-block 12
+    $$$$$:   92-block 13
+    $$$$$:   92-block 14
+    $$$$$:   92-block 15
+    $$$$$:   92-block 16
+    $$$$$:   92-block 17
+    $$$$$:   92-block 18
+    $$$$$:   92-block 19
+    $$$$$:   92-block 20
+    $$$$$:   92-block 21
+        1:   93:    int res = menorSuperficieViva(t);
+       1*:   94:    EXPECT_EQ(res, 25);
+        1:   94-block  0
+        1:   94-block  1
+    %%%%%:   94-block  2
+    %%%%%:   94-block  3
+    %%%%%:   94-block  4
+    %%%%%:   94-block  5
+    %%%%%:   94-block  6
+        1:   94-block  7
+    $$$$$:   94-block  8
+    $$$$$:   94-block  9
+    $$$$$:   94-block 10
+    $$$$$:   94-block 11
+    $$$$$:   94-block 12
+    $$$$$:   94-block 13
+        1:   95:}
+------------------
+_ZN39menorSuperficieVivaTEST_todasVivas_TestC1Ev:
+        1:   86:TEST(menorSuperficieVivaTEST, todasVivas){
+        1:   86-block  0
+------------------
+        -:   96:
+        -:   97:
+        2:   98:TEST(menorSuperficieVivaTEST,unaDeLasVistasTrasladadasTieneMenorSuperficie){
+        -:   99:    toroide t = {{true,true,false,false},
+        -:  100:                 {false,false,false,false},
+        -:  101:                 {true,false,false,false},
+        8:  102:                 {true,true,false,false}};
+        -:  103:
+        -:  104:    /*vista trasladada de menor superficie:
+        -:  105:     *           {false,false,false,false},
+        -:  106:                 {true,false,false,false},
+        -:  107:                 {true,true,false,false},
+        -:  108:                 {true,true,false,false}};
+        -:  109:    */
+        1:  110:    int res = menorSuperficieViva(t);
+       1*:  111:    EXPECT_EQ(res, 6);
+        1:  112:}
+------------------
+_ZN74menorSuperficieVivaTEST_unaDeLasVistasTrasladadasTieneMenorSuperficie_Test8TestBodyEv:
+        1:   98:TEST(menorSuperficieVivaTEST,unaDeLasVistasTrasladadasTieneMenorSuperficie){
+        -:   99:    toroide t = {{true,true,false,false},
+        -:  100:                 {false,false,false,false},
+        -:  101:                 {true,false,false,false},
+        8:  102:                 {true,true,false,false}};
+        1:  102-block  0
+        1:  102-block  1
+        1:  102-block  2
+        1:  102-block  3
+        1:  102-block  4
+        4:  102-block  5
+        1:  102-block  6
+    $$$$$:  102-block  7
+    $$$$$:  102-block  8
+    $$$$$:  102-block  9
+    $$$$$:  102-block 10
+    $$$$$:  102-block 11
+    $$$$$:  102-block 12
+    $$$$$:  102-block 13
+    $$$$$:  102-block 14
+    $$$$$:  102-block 15
+    $$$$$:  102-block 16
+    $$$$$:  102-block 17
+    $$$$$:  102-block 18
+        -:  103:
+        -:  104:    /*vista trasladada de menor superficie:
+        -:  105:     *           {false,false,false,false},
+        -:  106:                 {true,false,false,false},
+        -:  107:                 {true,true,false,false},
+        -:  108:                 {true,true,false,false}};
+        -:  109:    */
+        1:  110:    int res = menorSuperficieViva(t);
+       1*:  111:    EXPECT_EQ(res, 6);
+        1:  111-block  0
+        1:  111-block  1
+    %%%%%:  111-block  2
+    %%%%%:  111-block  3
+    %%%%%:  111-block  4
+    %%%%%:  111-block  5
+    %%%%%:  111-block  6
+        1:  111-block  7
+    $$$$$:  111-block  8
+    $$$$$:  111-block  9
+    $$$$$:  111-block 10
+    $$$$$:  111-block 11
+    $$$$$:  111-block 12
+    $$$$$:  111-block 13
+        1:  112:}
+------------------
+_ZN74menorSuperficieVivaTEST_unaDeLasVistasTrasladadasTieneMenorSuperficie_TestC1Ev:
+        1:   98:TEST(menorSuperficieVivaTEST,unaDeLasVistasTrasladadasTieneMenorSuperficie){
+        1:   98-block  0
+------------------
+        -:  113:
+        -:  114:
+        -:  115:
+        2:  116:TEST(menorSuperficieVivaTEST,esquinasOpuestaVivas){
+        -:  117:    toroide t = {{false,false,false,true},
+        -:  118:                 {false,false,false,false},
+        -:  119:                 {false,false,false,false},
+        8:  120:                 {true,false,false,false}};
+        -:  121:
+        -:  122:    /*una de las vistas trasladada de menor superficie:
+        -:  123:     *           {false,false,false,false},
+        -:  124:                 {false,false,false,false},
+        -:  125:                 {false,true,false,false},
+        -:  126:                 {true,false,false,false}};
+        -:  127:    */
+        1:  128:    int res = menorSuperficieViva(t);
+       1*:  129:    EXPECT_EQ(res, 4);
+        1:  130:}
+------------------
+_ZN49menorSuperficieVivaTEST_esquinasOpuestaVivas_Test8TestBodyEv:
+        1:  116:TEST(menorSuperficieVivaTEST,esquinasOpuestaVivas){
+        -:  117:    toroide t = {{false,false,false,true},
+        -:  118:                 {false,false,false,false},
+        -:  119:                 {false,false,false,false},
+        8:  120:                 {true,false,false,false}};
+        1:  120-block  0
+        1:  120-block  1
+        1:  120-block  2
+        1:  120-block  3
+        1:  120-block  4
+        4:  120-block  5
+        1:  120-block  6
+    $$$$$:  120-block  7
+    $$$$$:  120-block  8
+    $$$$$:  120-block  9
+    $$$$$:  120-block 10
+    $$$$$:  120-block 11
+    $$$$$:  120-block 12
+    $$$$$:  120-block 13
+    $$$$$:  120-block 14
+    $$$$$:  120-block 15
+    $$$$$:  120-block 16
+    $$$$$:  120-block 17
+    $$$$$:  120-block 18
+        -:  121:
+        -:  122:    /*una de las vistas trasladada de menor superficie:
+        -:  123:     *           {false,false,false,false},
+        -:  124:                 {false,false,false,false},
+        -:  125:                 {false,true,false,false},
+        -:  126:                 {true,false,false,false}};
+        -:  127:    */
+        1:  128:    int res = menorSuperficieViva(t);
+       1*:  129:    EXPECT_EQ(res, 4);
+        1:  129-block  0
+        1:  129-block  1
+    %%%%%:  129-block  2
+    %%%%%:  129-block  3
+    %%%%%:  129-block  4
+    %%%%%:  129-block  5
+    %%%%%:  129-block  6
+        1:  129-block  7
+    $$$$$:  129-block  8
+    $$$$$:  129-block  9
+    $$$$$:  129-block 10
+    $$$$$:  129-block 11
+    $$$$$:  129-block 12
+    $$$$$:  129-block 13
+        1:  130:}
+------------------
+_ZN49menorSuperficieVivaTEST_esquinasOpuestaVivas_TestC1Ev:
+        1:  116:TEST(menorSuperficieVivaTEST,esquinasOpuestaVivas){
+        1:  116-block  0
+------------------
+        -:  131:
+        -:  132:
+        2:  133:TEST(menorSuperficieVivaTEST,RectanguloMinimoConTodasLasEsquinasVivas){
+        -:  134:    toroide t = {{true,false,false,true},
+        -:  135:                 {false,false,false,false},
+        -:  136:                 {false,false,false,false},
+        -:  137:                 {true ,false,false,true},
+        9:  138:                 {false,false,false,false}};
+        -:  139:    /* Vista trasladada de area minima: 1 hacia la izquierda y 2 hacia abajo
+        -:  140:     *           {{true,true ,false,false},
+        -:  141:                 {false,false,false,false},
+        -:  142:                 {true ,true ,false,false},
+        -:  143:                 {false,false,false,false},
+        -:  144:                 {false,false,false,false}};*/
+        1:  145:    int res = menorSuperficieViva(t);
+       1*:  146:    EXPECT_EQ(res, 6);
+        1:  147:}
+------------------
+_ZN69menorSuperficieVivaTEST_RectanguloMinimoConTodasLasEsquinasVivas_Test8TestBodyEv:
+        1:  133:TEST(menorSuperficieVivaTEST,RectanguloMinimoConTodasLasEsquinasVivas){
+        -:  134:    toroide t = {{true,false,false,true},
+        -:  135:                 {false,false,false,false},
+        -:  136:                 {false,false,false,false},
+        -:  137:                 {true ,false,false,true},
+        9:  138:                 {false,false,false,false}};
+        1:  138-block  0
+        1:  138-block  1
+        1:  138-block  2
+        1:  138-block  3
+        1:  138-block  4
+        1:  138-block  5
+        5:  138-block  6
+        1:  138-block  7
+    $$$$$:  138-block  8
+    $$$$$:  138-block  9
+    $$$$$:  138-block 10
+    $$$$$:  138-block 11
+    $$$$$:  138-block 12
+    $$$$$:  138-block 13
+    $$$$$:  138-block 14
+    $$$$$:  138-block 15
+    $$$$$:  138-block 16
+    $$$$$:  138-block 17
+    $$$$$:  138-block 18
+    $$$$$:  138-block 19
+    $$$$$:  138-block 20
+    $$$$$:  138-block 21
+        -:  139:    /* Vista trasladada de area minima: 1 hacia la izquierda y 2 hacia abajo
+        -:  140:     *           {{true,true ,false,false},
+        -:  141:                 {false,false,false,false},
+        -:  142:                 {true ,true ,false,false},
+        -:  143:                 {false,false,false,false},
+        -:  144:                 {false,false,false,false}};*/
+        1:  145:    int res = menorSuperficieViva(t);
+       1*:  146:    EXPECT_EQ(res, 6);
+        1:  146-block  0
+        1:  146-block  1
+    %%%%%:  146-block  2
+    %%%%%:  146-block  3
+    %%%%%:  146-block  4
+    %%%%%:  146-block  5
+    %%%%%:  146-block  6
+        1:  146-block  7
+    $$$$$:  146-block  8
+    $$$$$:  146-block  9
+    $$$$$:  146-block 10
+    $$$$$:  146-block 11
+    $$$$$:  146-block 12
+    $$$$$:  146-block 13
+        1:  147:}
+------------------
+_ZN69menorSuperficieVivaTEST_RectanguloMinimoConTodasLasEsquinasVivas_TestC1Ev:
+        1:  133:TEST(menorSuperficieVivaTEST,RectanguloMinimoConTodasLasEsquinasVivas){
+        1:  133-block  0
+------------------
+        -:  148:
+        2:  149:TEST(menorSuperficieVivaTEST,todasLasEsquinasVivas){
+        -:  150:    toroide t = {{false ,false,false,false,false},
+        -:  151:                 {false,true ,false,true ,false},
+        -:  152:                 {false,false,false,false,false},
+        -:  153:                 {false,true ,false,true ,false},
+        9:  154:                 {false,false,false,false,false }};
+        -:  155:
+        1:  156:    int res = menorSuperficieViva(t);
+       1*:  157:    EXPECT_EQ(res,9);
+        1:  158:}
+------------------
+_ZN50menorSuperficieVivaTEST_todasLasEsquinasVivas_Test8TestBodyEv:
+        1:  149:TEST(menorSuperficieVivaTEST,todasLasEsquinasVivas){
+        -:  150:    toroide t = {{false ,false,false,false,false},
+        -:  151:                 {false,true ,false,true ,false},
+        -:  152:                 {false,false,false,false,false},
+        -:  153:                 {false,true ,false,true ,false},
+        9:  154:                 {false,false,false,false,false }};
+        1:  154-block  0
+        1:  154-block  1
+        1:  154-block  2
+        1:  154-block  3
+        1:  154-block  4
+        1:  154-block  5
+        5:  154-block  6
+        1:  154-block  7
+    $$$$$:  154-block  8
+    $$$$$:  154-block  9
+    $$$$$:  154-block 10
+    $$$$$:  154-block 11
+    $$$$$:  154-block 12
+    $$$$$:  154-block 13
+    $$$$$:  154-block 14
+    $$$$$:  154-block 15
+    $$$$$:  154-block 16
+    $$$$$:  154-block 17
+    $$$$$:  154-block 18
+    $$$$$:  154-block 19
+    $$$$$:  154-block 20
+    $$$$$:  154-block 21
+        -:  155:
+        1:  156:    int res = menorSuperficieViva(t);
+       1*:  157:    EXPECT_EQ(res,9);
+        1:  157-block  0
+        1:  157-block  1
+    %%%%%:  157-block  2
+    %%%%%:  157-block  3
+    %%%%%:  157-block  4
+    %%%%%:  157-block  5
+    %%%%%:  157-block  6
+        1:  157-block  7
+    $$$$$:  157-block  8
+    $$$$$:  157-block  9
+    $$$$$:  157-block 10
+    $$$$$:  157-block 11
+    $$$$$:  157-block 12
+    $$$$$:  157-block 13
+        1:  158:}
+------------------
+_ZN50menorSuperficieVivaTEST_todasLasEsquinasVivas_TestC1Ev:
+        1:  149:TEST(menorSuperficieVivaTEST,todasLasEsquinasVivas){
+        1:  149-block  0
+------------------
+        -:  159:
+        -:  160:

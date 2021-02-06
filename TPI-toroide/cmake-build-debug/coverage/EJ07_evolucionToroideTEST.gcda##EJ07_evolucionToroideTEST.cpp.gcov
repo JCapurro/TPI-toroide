@@ -1,0 +1,337 @@
+        -:    0:Source:/cygdrive/c/Users/Juan/Desktop/TPI-toroide/tests/EJ07_evolucionToroideTEST.cpp
+        -:    0:Graph:/cygdrive/c/Users/Juan/Desktop/TPI-toroide/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ07_evolucionToroideTEST.gcno
+        -:    0:Data:/cygdrive/c/Users/Juan/Desktop/TPI-toroide/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ07_evolucionToroideTEST.gcda
+        -:    0:Runs:1
+        -:    1:#include "../ejercicios.h"
+        -:    2:#include "gtest/gtest.h"
+        -:    3:#include <algorithm>
+        -:    4:
+        -:    5:using namespace std;
+        -:    6:
+        2:    7:TEST(evolucionToroideTEST, toroideDiagonalTresPorTresUnPaso){
+        7:    8:    toroide t = { {true, false, false}, {false, true, false}, {false, false, true} };
+        -:    9:    //1*0 0 1*0
+        -:   10:    //0 1 0 0 1
+        -:   11:    //0 0 1 0 0
+        -:   12:    //1 0 0 1 0
+        -:   13:    //0*1 0 0*1
+        7:   14:    toroide evo_t = { {true, true, true}, {true, true, true}, {true, true, true} };
+        -:   15:    //  1 1 1
+        -:   16:    //  1 1 1
+        -:   17:    //  1 1 1
+        1:   18:    evolucionToroide(t);
+       1*:   19:    EXPECT_EQ(t, evo_t);
+        1:   20:}
+------------------
+_ZN58evolucionToroideTEST_toroideDiagonalTresPorTresUnPaso_Test8TestBodyEv:
+        1:    7:TEST(evolucionToroideTEST, toroideDiagonalTresPorTresUnPaso){
+        7:    8:    toroide t = { {true, false, false}, {false, true, false}, {false, false, true} };
+        1:    8-block  0
+        1:    8-block  1
+        1:    8-block  2
+        1:    8-block  3
+        3:    8-block  4
+        1:    8-block  5
+    $$$$$:    8-block  6
+    $$$$$:    8-block  7
+    $$$$$:    8-block  8
+    $$$$$:    8-block  9
+    $$$$$:    8-block 10
+    $$$$$:    8-block 11
+    $$$$$:    8-block 12
+    $$$$$:    8-block 13
+    $$$$$:    8-block 14
+    $$$$$:    8-block 15
+        -:    9:    //1*0 0 1*0
+        -:   10:    //0 1 0 0 1
+        -:   11:    //0 0 1 0 0
+        -:   12:    //1 0 0 1 0
+        -:   13:    //0*1 0 0*1
+        7:   14:    toroide evo_t = { {true, true, true}, {true, true, true}, {true, true, true} };
+        1:   14-block  0
+        1:   14-block  1
+        1:   14-block  2
+        3:   14-block  3
+        1:   14-block  4
+    $$$$$:   14-block  5
+    $$$$$:   14-block  6
+    $$$$$:   14-block  7
+    $$$$$:   14-block  8
+    $$$$$:   14-block  9
+    $$$$$:   14-block 10
+    $$$$$:   14-block 11
+    $$$$$:   14-block 12
+    $$$$$:   14-block 13
+    $$$$$:   14-block 14
+        -:   15:    //  1 1 1
+        -:   16:    //  1 1 1
+        -:   17:    //  1 1 1
+        1:   18:    evolucionToroide(t);
+       1*:   19:    EXPECT_EQ(t, evo_t);
+        1:   19-block  0
+        1:   19-block  1
+    %%%%%:   19-block  2
+    %%%%%:   19-block  3
+    %%%%%:   19-block  4
+    %%%%%:   19-block  5
+    %%%%%:   19-block  6
+        1:   19-block  7
+    $$$$$:   19-block  8
+    $$$$$:   19-block  9
+    $$$$$:   19-block 10
+    $$$$$:   19-block 11
+    $$$$$:   19-block 12
+        1:   20:}
+------------------
+_ZN58evolucionToroideTEST_toroideDiagonalTresPorTresUnPaso_TestC1Ev:
+        1:    7:TEST(evolucionToroideTEST, toroideDiagonalTresPorTresUnPaso){
+        1:    7-block  0
+------------------
+        -:   21:
+        -:   22:/*####Nuestros TEST####*/
+        2:   23:TEST(evolucionToroideTEST, toroideOcilador){//ocilador:las tres celdas vivas rotan en sentido horario,
+        -:   24:    toroide t = { {false,false, false, false,false},
+        -:   25:                  {false,false, false, false,false},
+        -:   26:                  {false,true, true,true,false},
+        -:   27:                  {false,false, false,false,false},
+        9:   28:                  {false,false, false, false,false}};
+        -:   29:
+        -:   30:    toroide evo_t = {{false,false, false, false,false},
+        -:   31:                     {false,false, true, false,false},
+        -:   32:                     {false,false, true,false,false},
+        -:   33:                     {false,false, true,false,false},
+        9:   34:                     {false,false, false, false,false}};
+        -:   35:
+        1:   36:    evolucionToroide(t);
+       1*:   37:    EXPECT_EQ(t, evo_t);
+        1:   38:}
+------------------
+_ZN41evolucionToroideTEST_toroideOcilador_Test8TestBodyEv:
+        1:   23:TEST(evolucionToroideTEST, toroideOcilador){//ocilador:las tres celdas vivas rotan en sentido horario,
+        -:   24:    toroide t = { {false,false, false, false,false},
+        -:   25:                  {false,false, false, false,false},
+        -:   26:                  {false,true, true,true,false},
+        -:   27:                  {false,false, false,false,false},
+        9:   28:                  {false,false, false, false,false}};
+        1:   28-block  0
+        1:   28-block  1
+        1:   28-block  2
+        1:   28-block  3
+        1:   28-block  4
+        1:   28-block  5
+        5:   28-block  6
+        1:   28-block  7
+    $$$$$:   28-block  8
+    $$$$$:   28-block  9
+    $$$$$:   28-block 10
+    $$$$$:   28-block 11
+    $$$$$:   28-block 12
+    $$$$$:   28-block 13
+    $$$$$:   28-block 14
+    $$$$$:   28-block 15
+    $$$$$:   28-block 16
+    $$$$$:   28-block 17
+    $$$$$:   28-block 18
+    $$$$$:   28-block 19
+    $$$$$:   28-block 20
+    $$$$$:   28-block 21
+        -:   29:
+        -:   30:    toroide evo_t = {{false,false, false, false,false},
+        -:   31:                     {false,false, true, false,false},
+        -:   32:                     {false,false, true,false,false},
+        -:   33:                     {false,false, true,false,false},
+        9:   34:                     {false,false, false, false,false}};
+        1:   34-block  0
+        1:   34-block  1
+        1:   34-block  2
+        1:   34-block  3
+        1:   34-block  4
+        5:   34-block  5
+        1:   34-block  6
+    $$$$$:   34-block  7
+    $$$$$:   34-block  8
+    $$$$$:   34-block  9
+    $$$$$:   34-block 10
+    $$$$$:   34-block 11
+    $$$$$:   34-block 12
+    $$$$$:   34-block 13
+    $$$$$:   34-block 14
+    $$$$$:   34-block 15
+    $$$$$:   34-block 16
+    $$$$$:   34-block 17
+    $$$$$:   34-block 18
+    $$$$$:   34-block 19
+    $$$$$:   34-block 20
+        -:   35:
+        1:   36:    evolucionToroide(t);
+       1*:   37:    EXPECT_EQ(t, evo_t);
+        1:   37-block  0
+        1:   37-block  1
+    %%%%%:   37-block  2
+    %%%%%:   37-block  3
+    %%%%%:   37-block  4
+    %%%%%:   37-block  5
+    %%%%%:   37-block  6
+        1:   37-block  7
+    $$$$$:   37-block  8
+    $$$$$:   37-block  9
+    $$$$$:   37-block 10
+    $$$$$:   37-block 11
+    $$$$$:   37-block 12
+        1:   38:}
+------------------
+_ZN41evolucionToroideTEST_toroideOcilador_TestC1Ev:
+        1:   23:TEST(evolucionToroideTEST, toroideOcilador){//ocilador:las tres celdas vivas rotan en sentido horario,
+        1:   23-block  0
+------------------
+        -:   39:
+        2:   40:TEST(evolucionToroideTEST, toroideMuere){
+        -:   41:    toroide t ={{true,false,false},
+        -:   42:                {false,false,true},
+        7:   43:                {false,false,false}};
+        -:   44:
+        -:   45:    toroide tEvo = {{false, false,false},
+        -:   46:                    {false,false,false},
+        7:   47:                    {false,false,false}};
+        -:   48:
+        1:   49:    evolucionToroide(t);
+       1*:   50:    EXPECT_EQ(t,tEvo);
+        1:   51:}
+------------------
+_ZN38evolucionToroideTEST_toroideMuere_Test8TestBodyEv:
+        1:   40:TEST(evolucionToroideTEST, toroideMuere){
+        -:   41:    toroide t ={{true,false,false},
+        -:   42:                {false,false,true},
+        7:   43:                {false,false,false}};
+        1:   43-block  0
+        1:   43-block  1
+        1:   43-block  2
+        1:   43-block  3
+        3:   43-block  4
+        1:   43-block  5
+    $$$$$:   43-block  6
+    $$$$$:   43-block  7
+    $$$$$:   43-block  8
+    $$$$$:   43-block  9
+    $$$$$:   43-block 10
+    $$$$$:   43-block 11
+    $$$$$:   43-block 12
+    $$$$$:   43-block 13
+    $$$$$:   43-block 14
+    $$$$$:   43-block 15
+        -:   44:
+        -:   45:    toroide tEvo = {{false, false,false},
+        -:   46:                    {false,false,false},
+        7:   47:                    {false,false,false}};
+        1:   47-block  0
+        1:   47-block  1
+        1:   47-block  2
+        3:   47-block  3
+        1:   47-block  4
+    $$$$$:   47-block  5
+    $$$$$:   47-block  6
+    $$$$$:   47-block  7
+    $$$$$:   47-block  8
+    $$$$$:   47-block  9
+    $$$$$:   47-block 10
+    $$$$$:   47-block 11
+    $$$$$:   47-block 12
+    $$$$$:   47-block 13
+    $$$$$:   47-block 14
+        -:   48:
+        1:   49:    evolucionToroide(t);
+       1*:   50:    EXPECT_EQ(t,tEvo);
+        1:   50-block  0
+        1:   50-block  1
+    %%%%%:   50-block  2
+    %%%%%:   50-block  3
+    %%%%%:   50-block  4
+    %%%%%:   50-block  5
+    %%%%%:   50-block  6
+        1:   50-block  7
+    $$$$$:   50-block  8
+    $$$$$:   50-block  9
+    $$$$$:   50-block 10
+    $$$$$:   50-block 11
+    $$$$$:   50-block 12
+        1:   51:}
+------------------
+_ZN38evolucionToroideTEST_toroideMuere_TestC1Ev:
+        1:   40:TEST(evolucionToroideTEST, toroideMuere){
+        1:   40-block  0
+------------------
+        -:   52:
+        2:   53:TEST(evolucionToroideTEST, sobrepoblacion){
+        -:   54:    toroide t ={{false,true,false},
+        -:   55:                {true,true,false},
+        7:   56:                {false,true,true}};
+        -:   57:    toroide tEvo = {{false,false,false},
+        -:   58:                    {false,false,false},
+        7:   59:                    {false,false,false}};
+        -:   60:
+        1:   61:    evolucionToroide(t);
+       1*:   62:    EXPECT_EQ(t,tEvo);
+        1:   63:}
+------------------
+_ZN40evolucionToroideTEST_sobrepoblacion_Test8TestBodyEv:
+        1:   53:TEST(evolucionToroideTEST, sobrepoblacion){
+        -:   54:    toroide t ={{false,true,false},
+        -:   55:                {true,true,false},
+        7:   56:                {false,true,true}};
+        1:   56-block  0
+        1:   56-block  1
+        1:   56-block  2
+        1:   56-block  3
+        3:   56-block  4
+        1:   56-block  5
+    $$$$$:   56-block  6
+    $$$$$:   56-block  7
+    $$$$$:   56-block  8
+    $$$$$:   56-block  9
+    $$$$$:   56-block 10
+    $$$$$:   56-block 11
+    $$$$$:   56-block 12
+    $$$$$:   56-block 13
+    $$$$$:   56-block 14
+    $$$$$:   56-block 15
+        -:   57:    toroide tEvo = {{false,false,false},
+        -:   58:                    {false,false,false},
+        7:   59:                    {false,false,false}};
+        1:   59-block  0
+        1:   59-block  1
+        1:   59-block  2
+        3:   59-block  3
+        1:   59-block  4
+    $$$$$:   59-block  5
+    $$$$$:   59-block  6
+    $$$$$:   59-block  7
+    $$$$$:   59-block  8
+    $$$$$:   59-block  9
+    $$$$$:   59-block 10
+    $$$$$:   59-block 11
+    $$$$$:   59-block 12
+    $$$$$:   59-block 13
+    $$$$$:   59-block 14
+        -:   60:
+        1:   61:    evolucionToroide(t);
+       1*:   62:    EXPECT_EQ(t,tEvo);
+        1:   62-block  0
+        1:   62-block  1
+    %%%%%:   62-block  2
+    %%%%%:   62-block  3
+    %%%%%:   62-block  4
+    %%%%%:   62-block  5
+    %%%%%:   62-block  6
+        1:   62-block  7
+    $$$$$:   62-block  8
+    $$$$$:   62-block  9
+    $$$$$:   62-block 10
+    $$$$$:   62-block 11
+    $$$$$:   62-block 12
+        1:   63:}
+------------------
+_ZN40evolucionToroideTEST_sobrepoblacion_TestC1Ev:
+        1:   53:TEST(evolucionToroideTEST, sobrepoblacion){
+        1:   53-block  0
+------------------
+        -:   64:

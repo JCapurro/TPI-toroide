@@ -1,0 +1,489 @@
+        -:    0:Source:/cygdrive/c/Users/Juan/Desktop/TPI-toroide/tests/EJ11_seleccionNaturalTEST.cpp
+        -:    0:Graph:/cygdrive/c/Users/Juan/Desktop/TPI-toroide/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ11_seleccionNaturalTEST.gcno
+        -:    0:Data:/cygdrive/c/Users/Juan/Desktop/TPI-toroide/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ11_seleccionNaturalTEST.gcda
+        -:    0:Runs:1
+        -:    1:#include "../ejercicios.h"
+        -:    2:#include "gtest/gtest.h"
+        -:    3:#include <algorithm>
+        -:    4:
+        -:    5:using namespace std;
+        -:    6:
+        -:    7:
+        2:    8:TEST(seleccionNaturalTEST, toroideDiagonalVsUnoVivo){
+        -:    9:    toroide t1 = { 
+        -:   10:                  {true, false, false},
+        -:   11:                  {false, true, false},
+        7:   12:                  {false, false, true}}; 
+        -:   13:    toroide t2 = { 
+        -:   14:                  {false, false, false}, 
+        -:   15:                  {false, false, false}, 
+        -:   16:                  {false, true, false},
+        -:   17:                  {false, false, false}, 
+        9:   18:                  {false, false, false}};
+        2:   19:    vector<toroide> ts;
+        1:   20:    ts.push_back(t1);
+        1:   21:    ts.push_back(t2);
+        1:   22:    ts.push_back(t2);
+        1:   23:    int res = seleccionNatural(ts);
+       1*:   24:    EXPECT_EQ(res, 0);
+        1:   25:}
+------------------
+_ZN50seleccionNaturalTEST_toroideDiagonalVsUnoVivo_Test8TestBodyEv:
+        1:    8:TEST(seleccionNaturalTEST, toroideDiagonalVsUnoVivo){
+        -:    9:    toroide t1 = { 
+        -:   10:                  {true, false, false},
+        -:   11:                  {false, true, false},
+        7:   12:                  {false, false, true}}; 
+        1:   12-block  0
+        1:   12-block  1
+        1:   12-block  2
+        1:   12-block  3
+        3:   12-block  4
+        1:   12-block  5
+    $$$$$:   12-block  6
+    $$$$$:   12-block  7
+    $$$$$:   12-block  8
+    $$$$$:   12-block  9
+    $$$$$:   12-block 10
+    $$$$$:   12-block 11
+    $$$$$:   12-block 12
+    $$$$$:   12-block 13
+    $$$$$:   12-block 14
+    $$$$$:   12-block 15
+        -:   13:    toroide t2 = { 
+        -:   14:                  {false, false, false}, 
+        -:   15:                  {false, false, false}, 
+        -:   16:                  {false, true, false},
+        -:   17:                  {false, false, false}, 
+        9:   18:                  {false, false, false}};
+        1:   18-block  0
+        1:   18-block  1
+        1:   18-block  2
+        1:   18-block  3
+        1:   18-block  4
+        5:   18-block  5
+        1:   18-block  6
+    $$$$$:   18-block  7
+    $$$$$:   18-block  8
+    $$$$$:   18-block  9
+    $$$$$:   18-block 10
+    $$$$$:   18-block 11
+    $$$$$:   18-block 12
+    $$$$$:   18-block 13
+    $$$$$:   18-block 14
+    $$$$$:   18-block 15
+    $$$$$:   18-block 16
+    $$$$$:   18-block 17
+    $$$$$:   18-block 18
+    $$$$$:   18-block 19
+    $$$$$:   18-block 20
+        2:   19:    vector<toroide> ts;
+    $$$$$:   19-block  0
+        1:   20:    ts.push_back(t1);
+        1:   21:    ts.push_back(t2);
+        1:   21-block  0
+        1:   22:    ts.push_back(t2);
+        1:   22-block  0
+        1:   23:    int res = seleccionNatural(ts);
+        1:   23-block  0
+        1:   23-block  1
+        1:   23-block  2
+    $$$$$:   23-block  3
+    $$$$$:   23-block  4
+       1*:   24:    EXPECT_EQ(res, 0);
+        1:   24-block  0
+    %%%%%:   24-block  1
+    %%%%%:   24-block  2
+    %%%%%:   24-block  3
+    %%%%%:   24-block  4
+    %%%%%:   24-block  5
+        1:   24-block  6
+    $$$$$:   24-block  7
+    $$$$$:   24-block  8
+    $$$$$:   24-block  9
+    $$$$$:   24-block 10
+    $$$$$:   24-block 11
+    $$$$$:   24-block 12
+        1:   25:}
+------------------
+_ZN50seleccionNaturalTEST_toroideDiagonalVsUnoVivo_TestC1Ev:
+        1:    8:TEST(seleccionNaturalTEST, toroideDiagonalVsUnoVivo){
+        1:    8-block  0
+------------------
+        -:   26:
+        -:   27:/*Por intruccion de la catedra este TEST fue comentado,no cumple con la Precondicion*/
+        -:   28:/*TEST(seleccionNaturalTEST, DiagonalVsHorizontal){
+        -:   29:    toroide t1 = { 
+        -:   30:                  {false, false, false, false, false}, 
+        -:   31:                  {false, false, false, false, false}, 
+        -:   32:                  {false, true, true, true, false},
+        -:   33:                  {false, false, false, false, false}, 
+        -:   34:                  {false, false,false, false, false} };
+        -:   35:    toroide t2 = { 
+        -:   36:                  {true, false, false},
+        -:   37:                  {false, true, false},
+        -:   38:                  {false, false, true}}; 
+        -:   39:    vector<toroide> ts;
+        -:   40:    ts.push_back(t2);
+        -:   41:    ts.push_back(t1);
+        -:   42:    ts.push_back(t2);
+        -:   43:    int res = seleccionNatural(ts);
+        -:   44:    EXPECT_EQ(res, 1);
+        -:   45:}*/
+        -:   46:
+        -:   47:/*########TEST NUESTROS############*/
+        -:   48:
+        2:   49:TEST(seleccionNaturalTEST,t1ViveMasQuet2) {
+        -:   50:   toroide t1 = {{false,false,false,false,false},
+        -:   51:                {false,false,true ,false,false},
+        -:   52:                {false,true ,false, true,false},
+        8:   53:                {false,false,false,false,false}};
+        -:   54:
+        -:   55:   toroide t2 = {{false,false,false,false,false},
+        -:   56:                 {false,false,true,false,false},
+        -:   57:                 {false,false,true,false,false},
+        8:   58:                 {false,false,false,false,false}};
+        -:   59:
+        2:   60:    vector<toroide> ts;
+        1:   61:    ts.push_back(t2);
+        1:   62:    ts.push_back(t1);
+        1:   63:    ts.push_back(t2);
+        1:   64:    int res = seleccionNatural(ts);
+       1*:   65:    EXPECT_EQ(res, 1);
+        1:   66:}
+------------------
+_ZN40seleccionNaturalTEST_t1ViveMasQuet2_Test8TestBodyEv:
+        1:   49:TEST(seleccionNaturalTEST,t1ViveMasQuet2) {
+        -:   50:   toroide t1 = {{false,false,false,false,false},
+        -:   51:                {false,false,true ,false,false},
+        -:   52:                {false,true ,false, true,false},
+        8:   53:                {false,false,false,false,false}};
+        1:   53-block  0
+        1:   53-block  1
+        1:   53-block  2
+        1:   53-block  3
+        1:   53-block  4
+        4:   53-block  5
+        1:   53-block  6
+    $$$$$:   53-block  7
+    $$$$$:   53-block  8
+    $$$$$:   53-block  9
+    $$$$$:   53-block 10
+    $$$$$:   53-block 11
+    $$$$$:   53-block 12
+    $$$$$:   53-block 13
+    $$$$$:   53-block 14
+    $$$$$:   53-block 15
+    $$$$$:   53-block 16
+    $$$$$:   53-block 17
+    $$$$$:   53-block 18
+        -:   54:
+        -:   55:   toroide t2 = {{false,false,false,false,false},
+        -:   56:                 {false,false,true,false,false},
+        -:   57:                 {false,false,true,false,false},
+        8:   58:                 {false,false,false,false,false}};
+        1:   58-block  0
+        1:   58-block  1
+        1:   58-block  2
+        1:   58-block  3
+        4:   58-block  4
+        1:   58-block  5
+    $$$$$:   58-block  6
+    $$$$$:   58-block  7
+    $$$$$:   58-block  8
+    $$$$$:   58-block  9
+    $$$$$:   58-block 10
+    $$$$$:   58-block 11
+    $$$$$:   58-block 12
+    $$$$$:   58-block 13
+    $$$$$:   58-block 14
+    $$$$$:   58-block 15
+    $$$$$:   58-block 16
+    $$$$$:   58-block 17
+        -:   59:
+        2:   60:    vector<toroide> ts;
+    $$$$$:   60-block  0
+        1:   61:    ts.push_back(t2);
+        1:   62:    ts.push_back(t1);
+        1:   62-block  0
+        1:   63:    ts.push_back(t2);
+        1:   63-block  0
+        1:   64:    int res = seleccionNatural(ts);
+        1:   64-block  0
+        1:   64-block  1
+        1:   64-block  2
+    $$$$$:   64-block  3
+    $$$$$:   64-block  4
+       1*:   65:    EXPECT_EQ(res, 1);
+        1:   65-block  0
+    %%%%%:   65-block  1
+    %%%%%:   65-block  2
+    %%%%%:   65-block  3
+    %%%%%:   65-block  4
+    %%%%%:   65-block  5
+        1:   65-block  6
+    $$$$$:   65-block  7
+    $$$$$:   65-block  8
+    $$$$$:   65-block  9
+    $$$$$:   65-block 10
+    $$$$$:   65-block 11
+    $$$$$:   65-block 12
+        1:   66:}
+------------------
+_ZN40seleccionNaturalTEST_t1ViveMasQuet2_TestC1Ev:
+        1:   49:TEST(seleccionNaturalTEST,t1ViveMasQuet2) {
+        1:   49-block  0
+------------------
+        -:   67:
+        -:   68:
+        2:   69:TEST(seleccionNaturalTEST,t1Yt2MuerenAlMismoTiempo) {
+        -:   70://t1 muere en 2 ticks
+        -:   71:    toroide t1 = {{false,false,false,false,false},
+        -:   72:                  {false,false,true ,false,false},
+        -:   73:                  {false,true ,false, true,false},
+        8:   74:                  {false,false,false,false,false}};
+        -:   75://t2 muere en 2 ticks
+        -:   76:    toroide t2 = {{false,false,false,true,false},
+        -:   77:                  {false,false,true,false,false},
+        -:   78:                  {false,true,false,false,false},
+        8:   79:                  {false,false,false,false,false}};
+        -:   80:
+        2:   81:    vector<toroide> ts;
+        1:   82:    ts.push_back(t2);
+        1:   83:    ts.push_back(t1);
+        1:   84:    ts.push_back(t2);
+        1:   85:    int res = seleccionNatural(ts);
+       1*:   86:    EXPECT_EQ(res, 0);//el indice del mas longevo tiene que dejar a la izquierda(en ts) a los que mueren antes stricto
+        -:   87:                           // y a la derecha a los que mueren en tiempos iguales o menores.
+        1:   88:}
+------------------
+_ZN50seleccionNaturalTEST_t1Yt2MuerenAlMismoTiempo_Test8TestBodyEv:
+        1:   69:TEST(seleccionNaturalTEST,t1Yt2MuerenAlMismoTiempo) {
+        -:   70://t1 muere en 2 ticks
+        -:   71:    toroide t1 = {{false,false,false,false,false},
+        -:   72:                  {false,false,true ,false,false},
+        -:   73:                  {false,true ,false, true,false},
+        8:   74:                  {false,false,false,false,false}};
+        1:   74-block  0
+        1:   74-block  1
+        1:   74-block  2
+        1:   74-block  3
+        1:   74-block  4
+        4:   74-block  5
+        1:   74-block  6
+    $$$$$:   74-block  7
+    $$$$$:   74-block  8
+    $$$$$:   74-block  9
+    $$$$$:   74-block 10
+    $$$$$:   74-block 11
+    $$$$$:   74-block 12
+    $$$$$:   74-block 13
+    $$$$$:   74-block 14
+    $$$$$:   74-block 15
+    $$$$$:   74-block 16
+    $$$$$:   74-block 17
+    $$$$$:   74-block 18
+        -:   75://t2 muere en 2 ticks
+        -:   76:    toroide t2 = {{false,false,false,true,false},
+        -:   77:                  {false,false,true,false,false},
+        -:   78:                  {false,true,false,false,false},
+        8:   79:                  {false,false,false,false,false}};
+        1:   79-block  0
+        1:   79-block  1
+        1:   79-block  2
+        1:   79-block  3
+        4:   79-block  4
+        1:   79-block  5
+    $$$$$:   79-block  6
+    $$$$$:   79-block  7
+    $$$$$:   79-block  8
+    $$$$$:   79-block  9
+    $$$$$:   79-block 10
+    $$$$$:   79-block 11
+    $$$$$:   79-block 12
+    $$$$$:   79-block 13
+    $$$$$:   79-block 14
+    $$$$$:   79-block 15
+    $$$$$:   79-block 16
+    $$$$$:   79-block 17
+        -:   80:
+        2:   81:    vector<toroide> ts;
+    $$$$$:   81-block  0
+        1:   82:    ts.push_back(t2);
+        1:   83:    ts.push_back(t1);
+        1:   83-block  0
+        1:   84:    ts.push_back(t2);
+        1:   84-block  0
+        1:   85:    int res = seleccionNatural(ts);
+        1:   85-block  0
+        1:   85-block  1
+        1:   85-block  2
+    $$$$$:   85-block  3
+    $$$$$:   85-block  4
+       1*:   86:    EXPECT_EQ(res, 0);//el indice del mas longevo tiene que dejar a la izquierda(en ts) a los que mueren antes stricto
+        1:   86-block  0
+    %%%%%:   86-block  1
+    %%%%%:   86-block  2
+    %%%%%:   86-block  3
+    %%%%%:   86-block  4
+    %%%%%:   86-block  5
+        1:   86-block  6
+    $$$$$:   86-block  7
+    $$$$$:   86-block  8
+    $$$$$:   86-block  9
+    $$$$$:   86-block 10
+    $$$$$:   86-block 11
+    $$$$$:   86-block 12
+        -:   87:                           // y a la derecha a los que mueren en tiempos iguales o menores.
+        1:   88:}
+------------------
+_ZN50seleccionNaturalTEST_t1Yt2MuerenAlMismoTiempo_TestC1Ev:
+        1:   69:TEST(seleccionNaturalTEST,t1Yt2MuerenAlMismoTiempo) {
+        1:   69-block  0
+------------------
+        -:   89:
+        -:   90:
+        2:   91:TEST(seleccionNaturalTEST,t3MuereEnUnTickYt1Yt2MuerenEnDosTicks) {
+        -:   92:    //Muere en 2 ticks
+        -:   93:    toroide t1 = {{false,false,false,false,false},
+        -:   94:                  {false,false,true ,false,false},
+        -:   95:                  {false,true ,false, true,false},
+        8:   96:                  {false,false,false,false,false}};
+        -:   97:    //Muere en 2 ticks
+        -:   98:    toroide t2 = {{false,false,false,true,false},
+        -:   99:                  {false,false,true,false,false},
+        -:  100:                  {false,true,false,false,false},
+        8:  101:                  {false,false,false,false,false}};
+        -:  102:    //Muere en 1 tick
+        -:  103:    toroide t3 = {{false, false, false},
+        -:  104:                  {false, false, false},
+        -:  105:                  {false, true, false},
+        -:  106:                  {false, false, false},
+        9:  107:                  {false, false, false}};
+        2:  108:    vector<toroide> ts;
+        1:  109:    ts.push_back(t3);
+        1:  110:    ts.push_back(t3);
+        1:  111:    ts.push_back(t1);
+        1:  112:    ts.push_back(t2);
+        1:  113:    ts.push_back(t3);
+        -:  114:
+        1:  115:    int res = seleccionNatural(ts);
+       1*:  116:    EXPECT_EQ(res, 2);//el indice del mas longevo tiene que dejar a la izquierda(en ts) a los que mueren antes
+        -:  117:                           // estricto y a la derecha(en ts) a los que mueren en tiempos iguales o menores.
+        1:  118:}
+------------------
+_ZN63seleccionNaturalTEST_t3MuereEnUnTickYt1Yt2MuerenEnDosTicks_Test8TestBodyEv:
+        1:   91:TEST(seleccionNaturalTEST,t3MuereEnUnTickYt1Yt2MuerenEnDosTicks) {
+        -:   92:    //Muere en 2 ticks
+        -:   93:    toroide t1 = {{false,false,false,false,false},
+        -:   94:                  {false,false,true ,false,false},
+        -:   95:                  {false,true ,false, true,false},
+        8:   96:                  {false,false,false,false,false}};
+        1:   96-block  0
+        1:   96-block  1
+        1:   96-block  2
+        1:   96-block  3
+        1:   96-block  4
+        4:   96-block  5
+        1:   96-block  6
+    $$$$$:   96-block  7
+    $$$$$:   96-block  8
+    $$$$$:   96-block  9
+    $$$$$:   96-block 10
+    $$$$$:   96-block 11
+    $$$$$:   96-block 12
+    $$$$$:   96-block 13
+    $$$$$:   96-block 14
+    $$$$$:   96-block 15
+    $$$$$:   96-block 16
+    $$$$$:   96-block 17
+    $$$$$:   96-block 18
+        -:   97:    //Muere en 2 ticks
+        -:   98:    toroide t2 = {{false,false,false,true,false},
+        -:   99:                  {false,false,true,false,false},
+        -:  100:                  {false,true,false,false,false},
+        8:  101:                  {false,false,false,false,false}};
+        1:  101-block  0
+        1:  101-block  1
+        1:  101-block  2
+        1:  101-block  3
+        4:  101-block  4
+        1:  101-block  5
+    $$$$$:  101-block  6
+    $$$$$:  101-block  7
+    $$$$$:  101-block  8
+    $$$$$:  101-block  9
+    $$$$$:  101-block 10
+    $$$$$:  101-block 11
+    $$$$$:  101-block 12
+    $$$$$:  101-block 13
+    $$$$$:  101-block 14
+    $$$$$:  101-block 15
+    $$$$$:  101-block 16
+    $$$$$:  101-block 17
+        -:  102:    //Muere en 1 tick
+        -:  103:    toroide t3 = {{false, false, false},
+        -:  104:                  {false, false, false},
+        -:  105:                  {false, true, false},
+        -:  106:                  {false, false, false},
+        9:  107:                  {false, false, false}};
+        1:  107-block  0
+        1:  107-block  1
+        1:  107-block  2
+        1:  107-block  3
+        1:  107-block  4
+        5:  107-block  5
+        1:  107-block  6
+    $$$$$:  107-block  7
+    $$$$$:  107-block  8
+    $$$$$:  107-block  9
+    $$$$$:  107-block 10
+    $$$$$:  107-block 11
+    $$$$$:  107-block 12
+    $$$$$:  107-block 13
+    $$$$$:  107-block 14
+    $$$$$:  107-block 15
+    $$$$$:  107-block 16
+    $$$$$:  107-block 17
+    $$$$$:  107-block 18
+    $$$$$:  107-block 19
+    $$$$$:  107-block 20
+        2:  108:    vector<toroide> ts;
+    $$$$$:  108-block  0
+        1:  109:    ts.push_back(t3);
+        1:  110:    ts.push_back(t3);
+        1:  110-block  0
+        1:  111:    ts.push_back(t1);
+        1:  111-block  0
+        1:  112:    ts.push_back(t2);
+        1:  112-block  0
+        1:  113:    ts.push_back(t3);
+        1:  113-block  0
+        -:  114:
+        1:  115:    int res = seleccionNatural(ts);
+        1:  115-block  0
+        1:  115-block  1
+        1:  115-block  2
+    $$$$$:  115-block  3
+    $$$$$:  115-block  4
+       1*:  116:    EXPECT_EQ(res, 2);//el indice del mas longevo tiene que dejar a la izquierda(en ts) a los que mueren antes
+        1:  116-block  0
+    %%%%%:  116-block  1
+    %%%%%:  116-block  2
+    %%%%%:  116-block  3
+    %%%%%:  116-block  4
+    %%%%%:  116-block  5
+        1:  116-block  6
+    $$$$$:  116-block  7
+    $$$$$:  116-block  8
+    $$$$$:  116-block  9
+    $$$$$:  116-block 10
+    $$$$$:  116-block 11
+    $$$$$:  116-block 12
+        -:  117:                           // estricto y a la derecha(en ts) a los que mueren en tiempos iguales o menores.
+        1:  118:}
+------------------
+_ZN63seleccionNaturalTEST_t3MuereEnUnTickYt1Yt2MuerenEnDosTicks_TestC1Ev:
+        1:   91:TEST(seleccionNaturalTEST,t3MuereEnUnTickYt1Yt2MuerenEnDosTicks) {
+        1:   91-block  0
+------------------

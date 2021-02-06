@@ -1,0 +1,937 @@
+        -:    0:Source:/cygdrive/c/Users/Juan/Desktop/TPI-toroide/tests/EJ10_primosLejanosTEST.cpp
+        -:    0:Graph:/cygdrive/c/Users/Juan/Desktop/TPI-toroide/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ10_primosLejanosTEST.gcno
+        -:    0:Data:/cygdrive/c/Users/Juan/Desktop/TPI-toroide/cmake-build-debug/CMakeFiles/juegoDeLaVida.dir/tests/EJ10_primosLejanosTEST.gcda
+        -:    0:Runs:1
+        -:    1:#include "../ejercicios.h"
+        -:    2:#include "gtest/gtest.h"
+        -:    3:#include <algorithm>
+        -:    4:
+        -:    5:using namespace std;
+        -:    6:
+        2:    7:TEST(primosLejanosTEST, toroideHorizontalPeriodico2){
+        -:    8:    toroide t1 = { 
+        -:    9:                  {false, false, false, false, false}, 
+        -:   10:                  {false, false, false, false, false}, 
+        -:   11:                  {false, true, true, true, false},
+        -:   12:                  {false, false, false, false, false}, 
+        9:   13:                  {false, false,false, false, false} };
+        -:   14:    toroide t2 = { 
+        -:   15:                  {false, false, false, false, false}, 
+        -:   16:                  {false, false, true, false, false}, 
+        -:   17:                  {false, false, true, false, false},
+        -:   18:                  {false, false, true, false, false}, 
+        9:   19:                  {false, false,false, false, false} };
+        1:   20:    bool res = primosLejanos(t1, t2);
+       1*:   21:    EXPECT_TRUE(res);
+        1:   22:    res = primosLejanos(t2, t1);
+       1*:   23:    EXPECT_TRUE(res);
+        1:   24:}
+------------------
+_ZN50primosLejanosTEST_toroideHorizontalPeriodico2_Test8TestBodyEv:
+        1:    7:TEST(primosLejanosTEST, toroideHorizontalPeriodico2){
+        -:    8:    toroide t1 = { 
+        -:    9:                  {false, false, false, false, false}, 
+        -:   10:                  {false, false, false, false, false}, 
+        -:   11:                  {false, true, true, true, false},
+        -:   12:                  {false, false, false, false, false}, 
+        9:   13:                  {false, false,false, false, false} };
+        1:   13-block  0
+        1:   13-block  1
+        1:   13-block  2
+        1:   13-block  3
+        1:   13-block  4
+        1:   13-block  5
+        5:   13-block  6
+        1:   13-block  7
+    $$$$$:   13-block  8
+    $$$$$:   13-block  9
+    $$$$$:   13-block 10
+    $$$$$:   13-block 11
+    $$$$$:   13-block 12
+    $$$$$:   13-block 13
+    $$$$$:   13-block 14
+    $$$$$:   13-block 15
+    $$$$$:   13-block 16
+    $$$$$:   13-block 17
+    $$$$$:   13-block 18
+    $$$$$:   13-block 19
+    $$$$$:   13-block 20
+    $$$$$:   13-block 21
+        -:   14:    toroide t2 = { 
+        -:   15:                  {false, false, false, false, false}, 
+        -:   16:                  {false, false, true, false, false}, 
+        -:   17:                  {false, false, true, false, false},
+        -:   18:                  {false, false, true, false, false}, 
+        9:   19:                  {false, false,false, false, false} };
+        1:   19-block  0
+        1:   19-block  1
+        1:   19-block  2
+        1:   19-block  3
+        1:   19-block  4
+        5:   19-block  5
+        1:   19-block  6
+    $$$$$:   19-block  7
+    $$$$$:   19-block  8
+    $$$$$:   19-block  9
+    $$$$$:   19-block 10
+    $$$$$:   19-block 11
+    $$$$$:   19-block 12
+    $$$$$:   19-block 13
+    $$$$$:   19-block 14
+    $$$$$:   19-block 15
+    $$$$$:   19-block 16
+    $$$$$:   19-block 17
+    $$$$$:   19-block 18
+    $$$$$:   19-block 19
+    $$$$$:   19-block 20
+        1:   20:    bool res = primosLejanos(t1, t2);
+       1*:   21:    EXPECT_TRUE(res);
+        1:   21-block  0
+        1:   21-block  1
+    %%%%%:   21-block  2
+    %%%%%:   21-block  3
+    %%%%%:   21-block  4
+    %%%%%:   21-block  5
+    %%%%%:   21-block  6
+        1:   21-block  7
+    $$$$$:   21-block  8
+    $$$$$:   21-block  9
+    $$$$$:   21-block 10
+    $$$$$:   21-block 11
+    $$$$$:   21-block 12
+    $$$$$:   21-block 13
+    $$$$$:   21-block 14
+        1:   22:    res = primosLejanos(t2, t1);
+       1*:   23:    EXPECT_TRUE(res);
+        1:   23-block  0
+        1:   23-block  1
+    %%%%%:   23-block  2
+    %%%%%:   23-block  3
+    %%%%%:   23-block  4
+    %%%%%:   23-block  5
+    %%%%%:   23-block  6
+        1:   23-block  7
+    $$$$$:   23-block  8
+    $$$$$:   23-block  9
+    $$$$$:   23-block 10
+    $$$$$:   23-block 11
+    $$$$$:   23-block 12
+    $$$$$:   23-block 13
+    $$$$$:   23-block 14
+        1:   24:}
+------------------
+_ZN50primosLejanosTEST_toroideHorizontalPeriodico2_TestC1Ev:
+        1:    7:TEST(primosLejanosTEST, toroideHorizontalPeriodico2){
+        1:    7-block  0
+------------------
+        -:   25:
+        -:   26:/*###############Nuestros TEST#####################*/
+        2:   27:TEST(primosLejanosTEST,sonPrimos_t2_EsEvolucionDe_t1_DespuesDeUnTick){
+        -:   28:    toroide t1 = {{false,false,false,false,false},
+        -:   29:                  {false,false,true ,false,false},
+        -:   30:                  {false,true ,false, true,false},
+        8:   31:                  {false,false,false,false,false}};
+        -:   32:
+        -:   33:    toroide t2 = {{false,false, false, false,false},
+        -:   34:                  {false,false, true, false,false},
+        -:   35:                  {false,false, true, false,false},
+        8:   36:                  {false,false, false, false,false}};
+        -:   37:
+        1:   38:    bool res = primosLejanos(t1, t2);
+       1*:   39:    EXPECT_TRUE(res);
+        1:   40:    res = primosLejanos(t2, t1);
+       1*:   41:    EXPECT_TRUE(res);
+        1:   42:}
+------------------
+_ZN68primosLejanosTEST_sonPrimos_t2_EsEvolucionDe_t1_DespuesDeUnTick_Test8TestBodyEv:
+        1:   27:TEST(primosLejanosTEST,sonPrimos_t2_EsEvolucionDe_t1_DespuesDeUnTick){
+        -:   28:    toroide t1 = {{false,false,false,false,false},
+        -:   29:                  {false,false,true ,false,false},
+        -:   30:                  {false,true ,false, true,false},
+        8:   31:                  {false,false,false,false,false}};
+        1:   31-block  0
+        1:   31-block  1
+        1:   31-block  2
+        1:   31-block  3
+        1:   31-block  4
+        4:   31-block  5
+        1:   31-block  6
+    $$$$$:   31-block  7
+    $$$$$:   31-block  8
+    $$$$$:   31-block  9
+    $$$$$:   31-block 10
+    $$$$$:   31-block 11
+    $$$$$:   31-block 12
+    $$$$$:   31-block 13
+    $$$$$:   31-block 14
+    $$$$$:   31-block 15
+    $$$$$:   31-block 16
+    $$$$$:   31-block 17
+    $$$$$:   31-block 18
+        -:   32:
+        -:   33:    toroide t2 = {{false,false, false, false,false},
+        -:   34:                  {false,false, true, false,false},
+        -:   35:                  {false,false, true, false,false},
+        8:   36:                  {false,false, false, false,false}};
+        1:   36-block  0
+        1:   36-block  1
+        1:   36-block  2
+        1:   36-block  3
+        4:   36-block  4
+        1:   36-block  5
+    $$$$$:   36-block  6
+    $$$$$:   36-block  7
+    $$$$$:   36-block  8
+    $$$$$:   36-block  9
+    $$$$$:   36-block 10
+    $$$$$:   36-block 11
+    $$$$$:   36-block 12
+    $$$$$:   36-block 13
+    $$$$$:   36-block 14
+    $$$$$:   36-block 15
+    $$$$$:   36-block 16
+    $$$$$:   36-block 17
+        -:   37:
+        1:   38:    bool res = primosLejanos(t1, t2);
+       1*:   39:    EXPECT_TRUE(res);
+        1:   39-block  0
+        1:   39-block  1
+    %%%%%:   39-block  2
+    %%%%%:   39-block  3
+    %%%%%:   39-block  4
+    %%%%%:   39-block  5
+    %%%%%:   39-block  6
+        1:   39-block  7
+    $$$$$:   39-block  8
+    $$$$$:   39-block  9
+    $$$$$:   39-block 10
+    $$$$$:   39-block 11
+    $$$$$:   39-block 12
+    $$$$$:   39-block 13
+    $$$$$:   39-block 14
+        1:   40:    res = primosLejanos(t2, t1);
+       1*:   41:    EXPECT_TRUE(res);
+        1:   41-block  0
+        1:   41-block  1
+    %%%%%:   41-block  2
+    %%%%%:   41-block  3
+    %%%%%:   41-block  4
+    %%%%%:   41-block  5
+    %%%%%:   41-block  6
+        1:   41-block  7
+    $$$$$:   41-block  8
+    $$$$$:   41-block  9
+    $$$$$:   41-block 10
+    $$$$$:   41-block 11
+    $$$$$:   41-block 12
+    $$$$$:   41-block 13
+    $$$$$:   41-block 14
+        1:   42:}
+------------------
+_ZN68primosLejanosTEST_sonPrimos_t2_EsEvolucionDe_t1_DespuesDeUnTick_TestC1Ev:
+        1:   27:TEST(primosLejanosTEST,sonPrimos_t2_EsEvolucionDe_t1_DespuesDeUnTick){
+        1:   27-block  0
+------------------
+        -:   43:
+        -:   44:
+        2:   45:TEST(primosLejanosTEST,noSonPrimosYAmbosMueren){
+        -:   46:    toroide t1 = {{false,false,false,false,false},
+        -:   47:                  {false,false,true ,false,false},
+        -:   48:                  {false,true ,false, true,false},
+        8:   49:                  {false,false,false,false,false}};
+        -:   50:
+        -:   51:    toroide t2 = {{false,false, false, true,false},
+        -:   52:                  {false,false, true, false,false},
+        -:   53:                  {false,true,false, false,false},
+        8:   54:                  {false,false, false, false,false}};
+        -:   55:
+        1:   56:    bool res = primosLejanos(t1, t2);
+       1*:   57:    EXPECT_FALSE(res);
+        1:   58:    res = primosLejanos(t2, t1);
+       1*:   59:    EXPECT_FALSE(res);
+        1:   60:}
+------------------
+_ZN46primosLejanosTEST_noSonPrimosYAmbosMueren_Test8TestBodyEv:
+        1:   45:TEST(primosLejanosTEST,noSonPrimosYAmbosMueren){
+        -:   46:    toroide t1 = {{false,false,false,false,false},
+        -:   47:                  {false,false,true ,false,false},
+        -:   48:                  {false,true ,false, true,false},
+        8:   49:                  {false,false,false,false,false}};
+        1:   49-block  0
+        1:   49-block  1
+        1:   49-block  2
+        1:   49-block  3
+        1:   49-block  4
+        4:   49-block  5
+        1:   49-block  6
+    $$$$$:   49-block  7
+    $$$$$:   49-block  8
+    $$$$$:   49-block  9
+    $$$$$:   49-block 10
+    $$$$$:   49-block 11
+    $$$$$:   49-block 12
+    $$$$$:   49-block 13
+    $$$$$:   49-block 14
+    $$$$$:   49-block 15
+    $$$$$:   49-block 16
+    $$$$$:   49-block 17
+    $$$$$:   49-block 18
+        -:   50:
+        -:   51:    toroide t2 = {{false,false, false, true,false},
+        -:   52:                  {false,false, true, false,false},
+        -:   53:                  {false,true,false, false,false},
+        8:   54:                  {false,false, false, false,false}};
+        1:   54-block  0
+        1:   54-block  1
+        1:   54-block  2
+        1:   54-block  3
+        4:   54-block  4
+        1:   54-block  5
+    $$$$$:   54-block  6
+    $$$$$:   54-block  7
+    $$$$$:   54-block  8
+    $$$$$:   54-block  9
+    $$$$$:   54-block 10
+    $$$$$:   54-block 11
+    $$$$$:   54-block 12
+    $$$$$:   54-block 13
+    $$$$$:   54-block 14
+    $$$$$:   54-block 15
+    $$$$$:   54-block 16
+    $$$$$:   54-block 17
+        -:   55:
+        1:   56:    bool res = primosLejanos(t1, t2);
+       1*:   57:    EXPECT_FALSE(res);
+        1:   57-block  0
+        1:   57-block  1
+    %%%%%:   57-block  2
+    %%%%%:   57-block  3
+    %%%%%:   57-block  4
+    %%%%%:   57-block  5
+    %%%%%:   57-block  6
+        1:   57-block  7
+    $$$$$:   57-block  8
+    $$$$$:   57-block  9
+    $$$$$:   57-block 10
+    $$$$$:   57-block 11
+    $$$$$:   57-block 12
+    $$$$$:   57-block 13
+    $$$$$:   57-block 14
+    $$$$$:   57-block 15
+        1:   58:    res = primosLejanos(t2, t1);
+       1*:   59:    EXPECT_FALSE(res);
+        1:   59-block  0
+        1:   59-block  1
+    %%%%%:   59-block  2
+    %%%%%:   59-block  3
+    %%%%%:   59-block  4
+    %%%%%:   59-block  5
+    %%%%%:   59-block  6
+        1:   59-block  7
+    $$$$$:   59-block  8
+    $$$$$:   59-block  9
+    $$$$$:   59-block 10
+    $$$$$:   59-block 11
+    $$$$$:   59-block 12
+    $$$$$:   59-block 13
+    $$$$$:   59-block 14
+    $$$$$:   59-block 15
+        1:   60:}
+------------------
+_ZN46primosLejanosTEST_noSonPrimosYAmbosMueren_TestC1Ev:
+        1:   45:TEST(primosLejanosTEST,noSonPrimosYAmbosMueren){
+        1:   45-block  0
+------------------
+        -:   61:
+        2:   62:TEST(primosLejanosTEST,noSonPrimosUnoMuereYelOtroEsPeriodico){
+        -:   63:    toroide t1 = {{false,false,false,false,false,false},
+        -:   64:                  {false,false,true ,false,false,false},
+        -:   65:                  {false,true ,false, true,false,false},
+        -:   66:                  {false,false,false,false,false,false},
+        -:   67:                  {false,false,false,false,false,false},
+       10:   68:                  {false,false,false,false,false,false}};
+        -:   69:
+        -:   70:    toroide t2 = {{false,false,false,false,false,false},
+        -:   71:                  {false,false,false,true ,true ,false},
+        -:   72:                  {false,false,false,true ,true ,false},
+        -:   73:                  {false,true ,true ,false,false,false},
+        -:   74:                  {false,true ,true ,false,false,false},
+       10:   75:                  {false,false,false,false,false,false}};
+        -:   76:
+        1:   77:    bool res = primosLejanos(t1, t2);
+       1*:   78:    EXPECT_FALSE(res);
+        1:   79:    res = primosLejanos(t2, t1);
+       1*:   80:    EXPECT_FALSE(res);
+        1:   81:}
+------------------
+_ZN60primosLejanosTEST_noSonPrimosUnoMuereYelOtroEsPeriodico_Test8TestBodyEv:
+        1:   62:TEST(primosLejanosTEST,noSonPrimosUnoMuereYelOtroEsPeriodico){
+        -:   63:    toroide t1 = {{false,false,false,false,false,false},
+        -:   64:                  {false,false,true ,false,false,false},
+        -:   65:                  {false,true ,false, true,false,false},
+        -:   66:                  {false,false,false,false,false,false},
+        -:   67:                  {false,false,false,false,false,false},
+       10:   68:                  {false,false,false,false,false,false}};
+        1:   68-block  0
+        1:   68-block  1
+        1:   68-block  2
+        1:   68-block  3
+        1:   68-block  4
+        1:   68-block  5
+        1:   68-block  6
+        6:   68-block  7
+        1:   68-block  8
+    $$$$$:   68-block  9
+    $$$$$:   68-block 10
+    $$$$$:   68-block 11
+    $$$$$:   68-block 12
+    $$$$$:   68-block 13
+    $$$$$:   68-block 14
+    $$$$$:   68-block 15
+    $$$$$:   68-block 16
+    $$$$$:   68-block 17
+    $$$$$:   68-block 18
+    $$$$$:   68-block 19
+    $$$$$:   68-block 20
+    $$$$$:   68-block 21
+    $$$$$:   68-block 22
+    $$$$$:   68-block 23
+    $$$$$:   68-block 24
+        -:   69:
+        -:   70:    toroide t2 = {{false,false,false,false,false,false},
+        -:   71:                  {false,false,false,true ,true ,false},
+        -:   72:                  {false,false,false,true ,true ,false},
+        -:   73:                  {false,true ,true ,false,false,false},
+        -:   74:                  {false,true ,true ,false,false,false},
+       10:   75:                  {false,false,false,false,false,false}};
+        1:   75-block  0
+        1:   75-block  1
+        1:   75-block  2
+        1:   75-block  3
+        1:   75-block  4
+        1:   75-block  5
+        6:   75-block  6
+        1:   75-block  7
+    $$$$$:   75-block  8
+    $$$$$:   75-block  9
+    $$$$$:   75-block 10
+    $$$$$:   75-block 11
+    $$$$$:   75-block 12
+    $$$$$:   75-block 13
+    $$$$$:   75-block 14
+    $$$$$:   75-block 15
+    $$$$$:   75-block 16
+    $$$$$:   75-block 17
+    $$$$$:   75-block 18
+    $$$$$:   75-block 19
+    $$$$$:   75-block 20
+    $$$$$:   75-block 21
+    $$$$$:   75-block 22
+    $$$$$:   75-block 23
+        -:   76:
+        1:   77:    bool res = primosLejanos(t1, t2);
+       1*:   78:    EXPECT_FALSE(res);
+        1:   78-block  0
+        1:   78-block  1
+    %%%%%:   78-block  2
+    %%%%%:   78-block  3
+    %%%%%:   78-block  4
+    %%%%%:   78-block  5
+    %%%%%:   78-block  6
+        1:   78-block  7
+    $$$$$:   78-block  8
+    $$$$$:   78-block  9
+    $$$$$:   78-block 10
+    $$$$$:   78-block 11
+    $$$$$:   78-block 12
+    $$$$$:   78-block 13
+    $$$$$:   78-block 14
+    $$$$$:   78-block 15
+        1:   79:    res = primosLejanos(t2, t1);
+       1*:   80:    EXPECT_FALSE(res);
+        1:   80-block  0
+        1:   80-block  1
+    %%%%%:   80-block  2
+    %%%%%:   80-block  3
+    %%%%%:   80-block  4
+    %%%%%:   80-block  5
+    %%%%%:   80-block  6
+        1:   80-block  7
+    $$$$$:   80-block  8
+    $$$$$:   80-block  9
+    $$$$$:   80-block 10
+    $$$$$:   80-block 11
+    $$$$$:   80-block 12
+    $$$$$:   80-block 13
+    $$$$$:   80-block 14
+    $$$$$:   80-block 15
+        1:   81:}
+------------------
+_ZN60primosLejanosTEST_noSonPrimosUnoMuereYelOtroEsPeriodico_TestC1Ev:
+        1:   62:TEST(primosLejanosTEST,noSonPrimosUnoMuereYelOtroEsPeriodico){
+        1:   62-block  0
+------------------
+        -:   82:
+        2:   83:TEST(primosLejanosTEST,noSonPrimosYLosDosSonPeriodicos){
+        -:   84:    toroide t1 = {{false,false,false,false,false,false,false},
+        -:   85:                  {false,false,false,true ,false,false,false},
+        -:   86:                  {false,false,false,true,false,false,false},
+        -:   87:                  {false,false,false,true,false,false,false},
+        -:   88:                  {false,false,false,true,false,false,false},
+        -:   89:                  {false,false,false,true ,false,false,false},
+       11:   90:                  {false,false,false,false,false,false,false}};
+        -:   91:
+        -:   92:    toroide t2 = {{false,false,false,false,false,false,false},
+        -:   93:                  {false,false,false,false,true ,true ,false},
+        -:   94:                  {false,false,false,false,true ,true ,false},
+        -:   95:                  {false,false,true ,true ,false,false,false},
+        -:   96:                  {false,false,true ,true ,false,false,false},
+        -:   97:                  {false,false,false,false,false,false,false},
+       11:   98:                  {false,false,false,false,false,false,false}};
+        -:   99:
+        1:  100:    bool res = primosLejanos(t1, t2);
+       1*:  101:    EXPECT_FALSE(res);
+        1:  102:    res = primosLejanos(t2, t1);
+       1*:  103:    EXPECT_FALSE(res);
+        1:  104:}
+------------------
+_ZN54primosLejanosTEST_noSonPrimosYLosDosSonPeriodicos_Test8TestBodyEv:
+        1:   83:TEST(primosLejanosTEST,noSonPrimosYLosDosSonPeriodicos){
+        -:   84:    toroide t1 = {{false,false,false,false,false,false,false},
+        -:   85:                  {false,false,false,true ,false,false,false},
+        -:   86:                  {false,false,false,true,false,false,false},
+        -:   87:                  {false,false,false,true,false,false,false},
+        -:   88:                  {false,false,false,true,false,false,false},
+        -:   89:                  {false,false,false,true ,false,false,false},
+       11:   90:                  {false,false,false,false,false,false,false}};
+        1:   90-block  0
+        1:   90-block  1
+        1:   90-block  2
+        1:   90-block  3
+        1:   90-block  4
+        1:   90-block  5
+        1:   90-block  6
+        1:   90-block  7
+        7:   90-block  8
+        1:   90-block  9
+    $$$$$:   90-block 10
+    $$$$$:   90-block 11
+    $$$$$:   90-block 12
+    $$$$$:   90-block 13
+    $$$$$:   90-block 14
+    $$$$$:   90-block 15
+    $$$$$:   90-block 16
+    $$$$$:   90-block 17
+    $$$$$:   90-block 18
+    $$$$$:   90-block 19
+    $$$$$:   90-block 20
+    $$$$$:   90-block 21
+    $$$$$:   90-block 22
+    $$$$$:   90-block 23
+    $$$$$:   90-block 24
+    $$$$$:   90-block 25
+    $$$$$:   90-block 26
+    $$$$$:   90-block 27
+        -:   91:
+        -:   92:    toroide t2 = {{false,false,false,false,false,false,false},
+        -:   93:                  {false,false,false,false,true ,true ,false},
+        -:   94:                  {false,false,false,false,true ,true ,false},
+        -:   95:                  {false,false,true ,true ,false,false,false},
+        -:   96:                  {false,false,true ,true ,false,false,false},
+        -:   97:                  {false,false,false,false,false,false,false},
+       11:   98:                  {false,false,false,false,false,false,false}};
+        1:   98-block  0
+        1:   98-block  1
+        1:   98-block  2
+        1:   98-block  3
+        1:   98-block  4
+        1:   98-block  5
+        1:   98-block  6
+        7:   98-block  7
+        1:   98-block  8
+    $$$$$:   98-block  9
+    $$$$$:   98-block 10
+    $$$$$:   98-block 11
+    $$$$$:   98-block 12
+    $$$$$:   98-block 13
+    $$$$$:   98-block 14
+    $$$$$:   98-block 15
+    $$$$$:   98-block 16
+    $$$$$:   98-block 17
+    $$$$$:   98-block 18
+    $$$$$:   98-block 19
+    $$$$$:   98-block 20
+    $$$$$:   98-block 21
+    $$$$$:   98-block 22
+    $$$$$:   98-block 23
+    $$$$$:   98-block 24
+    $$$$$:   98-block 25
+    $$$$$:   98-block 26
+        -:   99:
+        1:  100:    bool res = primosLejanos(t1, t2);
+       1*:  101:    EXPECT_FALSE(res);
+        1:  101-block  0
+        1:  101-block  1
+    %%%%%:  101-block  2
+    %%%%%:  101-block  3
+    %%%%%:  101-block  4
+    %%%%%:  101-block  5
+    %%%%%:  101-block  6
+        1:  101-block  7
+    $$$$$:  101-block  8
+    $$$$$:  101-block  9
+    $$$$$:  101-block 10
+    $$$$$:  101-block 11
+    $$$$$:  101-block 12
+    $$$$$:  101-block 13
+    $$$$$:  101-block 14
+    $$$$$:  101-block 15
+        1:  102:    res = primosLejanos(t2, t1);
+       1*:  103:    EXPECT_FALSE(res);
+        1:  103-block  0
+        1:  103-block  1
+    %%%%%:  103-block  2
+    %%%%%:  103-block  3
+    %%%%%:  103-block  4
+    %%%%%:  103-block  5
+    %%%%%:  103-block  6
+        1:  103-block  7
+    $$$$$:  103-block  8
+    $$$$$:  103-block  9
+    $$$$$:  103-block 10
+    $$$$$:  103-block 11
+    $$$$$:  103-block 12
+    $$$$$:  103-block 13
+    $$$$$:  103-block 14
+    $$$$$:  103-block 15
+        1:  104:}
+------------------
+_ZN54primosLejanosTEST_noSonPrimosYLosDosSonPeriodicos_TestC1Ev:
+        1:   83:TEST(primosLejanosTEST,noSonPrimosYLosDosSonPeriodicos){
+        1:   83-block  0
+------------------
+        -:  105:
+        -:  106:
+        -:  107:
+        2:  108:TEST(primosLejanosTEST,sonPrimosYestanAmbosMuertos){
+        -:  109:    toroide t1 = {{false,false,false,false},
+        -:  110:                  {false,false,false,false},
+        -:  111:                  {false,false,false,false},
+        8:  112:                  {false,false,false,false}};
+        -:  113:
+        -:  114:    toroide t2 ={{false,false,false,false},
+        -:  115:                 {false,false,false,false},
+        -:  116:                 {false,false,false,false},
+        8:  117:                 {false,false,false,false}};
+        -:  118:
+        1:  119:    bool res = primosLejanos(t1, t2);
+       1*:  120:    EXPECT_TRUE(res);
+        1:  121:    res = primosLejanos(t2, t1);
+       1*:  122:    EXPECT_TRUE(res);
+        1:  123:}
+------------------
+_ZN50primosLejanosTEST_sonPrimosYestanAmbosMuertos_Test8TestBodyEv:
+        1:  108:TEST(primosLejanosTEST,sonPrimosYestanAmbosMuertos){
+        -:  109:    toroide t1 = {{false,false,false,false},
+        -:  110:                  {false,false,false,false},
+        -:  111:                  {false,false,false,false},
+        8:  112:                  {false,false,false,false}};
+        1:  112-block  0
+        1:  112-block  1
+        1:  112-block  2
+        1:  112-block  3
+        1:  112-block  4
+        4:  112-block  5
+        1:  112-block  6
+    $$$$$:  112-block  7
+    $$$$$:  112-block  8
+    $$$$$:  112-block  9
+    $$$$$:  112-block 10
+    $$$$$:  112-block 11
+    $$$$$:  112-block 12
+    $$$$$:  112-block 13
+    $$$$$:  112-block 14
+    $$$$$:  112-block 15
+    $$$$$:  112-block 16
+    $$$$$:  112-block 17
+    $$$$$:  112-block 18
+        -:  113:
+        -:  114:    toroide t2 ={{false,false,false,false},
+        -:  115:                 {false,false,false,false},
+        -:  116:                 {false,false,false,false},
+        8:  117:                 {false,false,false,false}};
+        1:  117-block  0
+        1:  117-block  1
+        1:  117-block  2
+        1:  117-block  3
+        4:  117-block  4
+        1:  117-block  5
+    $$$$$:  117-block  6
+    $$$$$:  117-block  7
+    $$$$$:  117-block  8
+    $$$$$:  117-block  9
+    $$$$$:  117-block 10
+    $$$$$:  117-block 11
+    $$$$$:  117-block 12
+    $$$$$:  117-block 13
+    $$$$$:  117-block 14
+    $$$$$:  117-block 15
+    $$$$$:  117-block 16
+    $$$$$:  117-block 17
+        -:  118:
+        1:  119:    bool res = primosLejanos(t1, t2);
+       1*:  120:    EXPECT_TRUE(res);
+        1:  120-block  0
+        1:  120-block  1
+    %%%%%:  120-block  2
+    %%%%%:  120-block  3
+    %%%%%:  120-block  4
+    %%%%%:  120-block  5
+    %%%%%:  120-block  6
+        1:  120-block  7
+    $$$$$:  120-block  8
+    $$$$$:  120-block  9
+    $$$$$:  120-block 10
+    $$$$$:  120-block 11
+    $$$$$:  120-block 12
+    $$$$$:  120-block 13
+    $$$$$:  120-block 14
+        1:  121:    res = primosLejanos(t2, t1);
+       1*:  122:    EXPECT_TRUE(res);
+        1:  122-block  0
+        1:  122-block  1
+    %%%%%:  122-block  2
+    %%%%%:  122-block  3
+    %%%%%:  122-block  4
+    %%%%%:  122-block  5
+    %%%%%:  122-block  6
+        1:  122-block  7
+    $$$$$:  122-block  8
+    $$$$$:  122-block  9
+    $$$$$:  122-block 10
+    $$$$$:  122-block 11
+    $$$$$:  122-block 12
+    $$$$$:  122-block 13
+    $$$$$:  122-block 14
+        1:  123:}
+------------------
+_ZN50primosLejanosTEST_sonPrimosYestanAmbosMuertos_TestC1Ev:
+        1:  108:TEST(primosLejanosTEST,sonPrimosYestanAmbosMuertos){
+        1:  108-block  0
+------------------
+        -:  124:
+        2:  125:TEST(primosLejanosTEST,sonPrimosYAmbosSonIgualesPeriodicosQueSeRepiten){
+        -:  126:    toroide t1 = {{false,false,false,false},
+        -:  127:                  {false,true,true,false},
+        -:  128:                  {false,true,true,false},
+        8:  129:                  {false,false,false,false}};
+        -:  130:
+        -:  131:    toroide t2 ={{false,false,false,false},
+        -:  132:                 {false,true,true,false},
+        -:  133:                 {false,true,true,false},
+        8:  134:                 {false,false,false,false}};
+        -:  135:
+        1:  136:    bool res = primosLejanos(t1, t2);
+       1*:  137:    EXPECT_TRUE(res);
+        1:  138:    res = primosLejanos(t2, t1);
+       1*:  139:    EXPECT_TRUE(res);
+        1:  140:}
+------------------
+_ZN70primosLejanosTEST_sonPrimosYAmbosSonIgualesPeriodicosQueSeRepiten_Test8TestBodyEv:
+        1:  125:TEST(primosLejanosTEST,sonPrimosYAmbosSonIgualesPeriodicosQueSeRepiten){
+        -:  126:    toroide t1 = {{false,false,false,false},
+        -:  127:                  {false,true,true,false},
+        -:  128:                  {false,true,true,false},
+        8:  129:                  {false,false,false,false}};
+        1:  129-block  0
+        1:  129-block  1
+        1:  129-block  2
+        1:  129-block  3
+        1:  129-block  4
+        4:  129-block  5
+        1:  129-block  6
+    $$$$$:  129-block  7
+    $$$$$:  129-block  8
+    $$$$$:  129-block  9
+    $$$$$:  129-block 10
+    $$$$$:  129-block 11
+    $$$$$:  129-block 12
+    $$$$$:  129-block 13
+    $$$$$:  129-block 14
+    $$$$$:  129-block 15
+    $$$$$:  129-block 16
+    $$$$$:  129-block 17
+    $$$$$:  129-block 18
+        -:  130:
+        -:  131:    toroide t2 ={{false,false,false,false},
+        -:  132:                 {false,true,true,false},
+        -:  133:                 {false,true,true,false},
+        8:  134:                 {false,false,false,false}};
+        1:  134-block  0
+        1:  134-block  1
+        1:  134-block  2
+        1:  134-block  3
+        4:  134-block  4
+        1:  134-block  5
+    $$$$$:  134-block  6
+    $$$$$:  134-block  7
+    $$$$$:  134-block  8
+    $$$$$:  134-block  9
+    $$$$$:  134-block 10
+    $$$$$:  134-block 11
+    $$$$$:  134-block 12
+    $$$$$:  134-block 13
+    $$$$$:  134-block 14
+    $$$$$:  134-block 15
+    $$$$$:  134-block 16
+    $$$$$:  134-block 17
+        -:  135:
+        1:  136:    bool res = primosLejanos(t1, t2);
+       1*:  137:    EXPECT_TRUE(res);
+        1:  137-block  0
+        1:  137-block  1
+    %%%%%:  137-block  2
+    %%%%%:  137-block  3
+    %%%%%:  137-block  4
+    %%%%%:  137-block  5
+    %%%%%:  137-block  6
+        1:  137-block  7
+    $$$$$:  137-block  8
+    $$$$$:  137-block  9
+    $$$$$:  137-block 10
+    $$$$$:  137-block 11
+    $$$$$:  137-block 12
+    $$$$$:  137-block 13
+    $$$$$:  137-block 14
+        1:  138:    res = primosLejanos(t2, t1);
+       1*:  139:    EXPECT_TRUE(res);
+        1:  139-block  0
+        1:  139-block  1
+    %%%%%:  139-block  2
+    %%%%%:  139-block  3
+    %%%%%:  139-block  4
+    %%%%%:  139-block  5
+    %%%%%:  139-block  6
+        1:  139-block  7
+    $$$$$:  139-block  8
+    $$$$$:  139-block  9
+    $$$$$:  139-block 10
+    $$$$$:  139-block 11
+    $$$$$:  139-block 12
+    $$$$$:  139-block 13
+    $$$$$:  139-block 14
+        1:  140:}
+------------------
+_ZN70primosLejanosTEST_sonPrimosYAmbosSonIgualesPeriodicosQueSeRepiten_TestC1Ev:
+        1:  125:TEST(primosLejanosTEST,sonPrimosYAmbosSonIgualesPeriodicosQueSeRepiten){
+        1:  125-block  0
+------------------
+        -:  141:
+        -:  142:
+        2:  143:TEST(primosLejanosTEST,noSonPrimosSonIgualesPeroEventualmenteMueren){
+        -:  144:    toroide t1 = {{false,false,false,true},
+        -:  145:                  {false,false,true,false},
+        -:  146:                  {false,true,false,false},
+        8:  147:                  {false,false,false,false}};
+        -:  148:
+        -:  149:    toroide t2 = {{false,false,false,true},
+        -:  150:                  {false,false,true,false},
+        -:  151:                  {false,true,false,false},
+        8:  152:                  {false,false,false,false}};
+        1:  153:    bool res = primosLejanos(t1, t2);
+       1*:  154:    EXPECT_FALSE(res);
+        1:  155:    res = primosLejanos(t2, t1);
+       1*:  156:    EXPECT_FALSE(res);
+        1:  157:}
+------------------
+_ZN67primosLejanosTEST_noSonPrimosSonIgualesPeroEventualmenteMueren_Test8TestBodyEv:
+        1:  143:TEST(primosLejanosTEST,noSonPrimosSonIgualesPeroEventualmenteMueren){
+        -:  144:    toroide t1 = {{false,false,false,true},
+        -:  145:                  {false,false,true,false},
+        -:  146:                  {false,true,false,false},
+        8:  147:                  {false,false,false,false}};
+        1:  147-block  0
+        1:  147-block  1
+        1:  147-block  2
+        1:  147-block  3
+        1:  147-block  4
+        4:  147-block  5
+        1:  147-block  6
+    $$$$$:  147-block  7
+    $$$$$:  147-block  8
+    $$$$$:  147-block  9
+    $$$$$:  147-block 10
+    $$$$$:  147-block 11
+    $$$$$:  147-block 12
+    $$$$$:  147-block 13
+    $$$$$:  147-block 14
+    $$$$$:  147-block 15
+    $$$$$:  147-block 16
+    $$$$$:  147-block 17
+    $$$$$:  147-block 18
+        -:  148:
+        -:  149:    toroide t2 = {{false,false,false,true},
+        -:  150:                  {false,false,true,false},
+        -:  151:                  {false,true,false,false},
+        8:  152:                  {false,false,false,false}};
+        1:  152-block  0
+        1:  152-block  1
+        1:  152-block  2
+        1:  152-block  3
+        4:  152-block  4
+        1:  152-block  5
+    $$$$$:  152-block  6
+    $$$$$:  152-block  7
+    $$$$$:  152-block  8
+    $$$$$:  152-block  9
+    $$$$$:  152-block 10
+    $$$$$:  152-block 11
+    $$$$$:  152-block 12
+    $$$$$:  152-block 13
+    $$$$$:  152-block 14
+    $$$$$:  152-block 15
+    $$$$$:  152-block 16
+    $$$$$:  152-block 17
+        1:  153:    bool res = primosLejanos(t1, t2);
+       1*:  154:    EXPECT_FALSE(res);
+        1:  154-block  0
+        1:  154-block  1
+    %%%%%:  154-block  2
+    %%%%%:  154-block  3
+    %%%%%:  154-block  4
+    %%%%%:  154-block  5
+    %%%%%:  154-block  6
+        1:  154-block  7
+    $$$$$:  154-block  8
+    $$$$$:  154-block  9
+    $$$$$:  154-block 10
+    $$$$$:  154-block 11
+    $$$$$:  154-block 12
+    $$$$$:  154-block 13
+    $$$$$:  154-block 14
+    $$$$$:  154-block 15
+        1:  155:    res = primosLejanos(t2, t1);
+       1*:  156:    EXPECT_FALSE(res);
+        1:  156-block  0
+        1:  156-block  1
+    %%%%%:  156-block  2
+    %%%%%:  156-block  3
+    %%%%%:  156-block  4
+    %%%%%:  156-block  5
+    %%%%%:  156-block  6
+        1:  156-block  7
+    $$$$$:  156-block  8
+    $$$$$:  156-block  9
+    $$$$$:  156-block 10
+    $$$$$:  156-block 11
+    $$$$$:  156-block 12
+    $$$$$:  156-block 13
+    $$$$$:  156-block 14
+    $$$$$:  156-block 15
+        1:  157:}
+------------------
+_ZN67primosLejanosTEST_noSonPrimosSonIgualesPeroEventualmenteMueren_TestC1Ev:
+        1:  143:TEST(primosLejanosTEST,noSonPrimosSonIgualesPeroEventualmenteMueren){
+        1:  143-block  0
+------------------
+        -:  158:
